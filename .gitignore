@@ -1,0 +1,10 @@
+*.mov
+*.wav
+*.mp3
+frames/
+tmp/
+out/
+__pycache__/
+*.pyc
+.env
+*token*
