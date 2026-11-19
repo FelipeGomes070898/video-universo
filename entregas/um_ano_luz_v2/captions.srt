@@ -1,0 +1,556 @@
+1
+00:00:00,550 --> 00:00:05,130
+Forty-nine years ago, humanity launched a machine toward the stars.
+
+2
+00:00:05,370 --> 00:00:10,889
+Today, that machine, Voyager One, is about to reach a distance called one light-day.
+
+3
+00:00:11,129 --> 00:00:16,775
+And once you understand what that means, you will never look at the night sky the same way.
+
+4
+00:00:17,015 --> 00:00:23,707
+It left Earth carrying a golden record, a message in a bottle thrown into an ocean we barely understand.
+
+5
+00:00:24,557 --> 00:00:29,500
+A light-day is the distance a beam of light travels in twenty-four hours.
+
+6
+00:00:29,740 --> 00:00:35,088
+A light-year is that same journey, repeated three hundred and sixty-five times.
+
+7
+00:00:35,328 --> 00:00:40,185
+One ray of light, running for an entire year, without ever slowing down.
+
+8
+00:00:40,425 --> 00:00:45,197
+In a single day, light covers about twenty-six billion kilometers.
+
+9
+00:00:45,437 --> 00:00:52,236
+That is the one-day distance Voyager is about to reach, and it took the spacecraft forty-nine years to fly it.
+
+10
+00:00:53,086 --> 00:00:56,045
+Written as a number, it looks harmless.
+
+11
+00:00:56,285 --> 00:00:59,734
+Nine point four six trillion kilometers.
+
+12
+00:01:00,194 --> 00:01:03,729
+But your brain simply shrugs at a number like that.
+
+13
+00:01:03,969 --> 00:01:06,479
+So let's do something about it.
+
+14
+00:01:06,719 --> 00:01:10,830
+Let's shrink the universe until it fits on a map you already know.
+
+15
+00:01:11,070 --> 00:01:14,818
+A number with thirteen digits, and no way to see it.
+
+16
+00:01:15,668 --> 00:01:21,443
+Light is the fastest thing in the universe: three hundred thousand kilometers every second.
+
+17
+00:01:21,683 --> 00:01:26,711
+In a single second, a beam of light could circle the Earth seven and a half times.
+
+18
+00:01:26,951 --> 00:01:30,741
+Seven and a half laps, before you finish saying the word one.
+
+19
+00:01:31,811 --> 00:01:34,450
+Now keep that beam going.
+
+20
+00:01:34,870 --> 00:01:36,143
+Days pass.
+
+21
+00:01:36,563 --> 00:01:37,493
+Weeks.
+
+22
+00:01:37,913 --> 00:01:39,079
+Seasons.
+
+23
+00:01:39,499 --> 00:01:46,106
+After one full year of travel, that single ray has covered nine point four six trillion kilometers.
+
+24
+00:01:46,346 --> 00:01:51,715
+Spring, summer, autumn and winter pass on Earth, while that ray is still racing outward.
+
+25
+00:01:51,955 --> 00:01:56,493
+Same speed, day after day, with no stops and no slowing down.
+
+26
+00:01:56,733 --> 00:02:00,459
+And after all that, it has covered just one light-year.
+
+27
+00:02:01,309 --> 00:02:03,436
+You can say that number.
+
+28
+00:02:03,856 --> 00:02:05,727
+You just can't feel it.
+
+29
+00:02:06,147 --> 00:02:08,593
+So let's bring it down to Earth.
+
+30
+00:02:08,833 --> 00:02:10,043
+Literally.
+
+31
+00:02:10,463 --> 00:02:14,851
+Nine point four six trillion is a perfectly valid number.
+
+32
+00:02:15,091 --> 00:02:21,697
+It just means nothing to us, because we have never walked, driven or flown anything remotely that far.
+
+33
+00:02:21,937 --> 00:02:27,392
+Our minds evolved for distances we can see: a hill, a river, a day's walk.
+
+34
+00:02:27,632 --> 00:02:30,271
+So we need a different kind of ruler.
+
+35
+00:02:31,121 --> 00:02:35,167
+Picture the Praça da Sé, in the heart of São Paulo.
+
+36
+00:02:35,407 --> 00:02:38,601
+In the middle of the square, we place a football.
+
+37
+00:02:38,841 --> 00:02:41,309
+That ball is the Sun.
+
+38
+00:02:41,729 --> 00:02:46,522
+The real Sun is almost one point four million kilometers wide.
+
+39
+00:02:46,762 --> 00:02:49,955
+Here, it is twenty-two centimeters.
+
+40
+00:02:50,375 --> 00:02:56,129
+Everything else in the Solar System will be scaled down by exactly the same amount.
+
+41
+00:02:56,369 --> 00:03:03,146
+Place it on the ground, and the Sun, the engine of all life on Earth, becomes something you could pick up with both hands.
+
+42
+00:03:04,216 --> 00:03:06,364
+Now, where is the Earth?
+
+43
+00:03:07,084 --> 00:03:11,472
+It is a speck two millimeters wide, about the size of a pinhead.
+
+44
+00:03:11,712 --> 00:03:16,399
+And it sits twenty-four meters away from the ball, roughly thirty paces.
+
+45
+00:03:16,639 --> 00:03:20,216
+Everything you have ever known fits on that dot.
+
+46
+00:03:20,456 --> 00:03:24,887
+The Moon would be an even smaller grain, six centimeters from the Earth.
+
+47
+00:03:25,127 --> 00:03:29,707
+Between the two, there is nothing: just empty space, almost all of it.
+
+48
+00:03:30,557 --> 00:03:33,387
+Keep walking, and the planets appear.
+
+49
+00:03:33,627 --> 00:03:38,335
+Jupiter, a small marble, one hundred and twenty meters from the ball.
+
+50
+00:03:38,575 --> 00:03:42,046
+Saturn, two hundred and twenty-five meters.
+
+51
+00:03:42,286 --> 00:03:45,351
+Uranus, nearly half a kilometer.
+
+52
+00:03:45,771 --> 00:03:50,714
+And Neptune, the last planet, a little over seven hundred meters away.
+
+53
+00:03:50,954 --> 00:03:54,425
+Whole worlds, separated by a few city blocks.
+
+54
+00:03:54,665 --> 00:03:58,903
+Each of these worlds is a speck, drifting in a vast emptiness.
+
+55
+00:03:59,143 --> 00:04:04,897
+Light, the fastest thing there is, needs about four hours to cross from the ball to Neptune.
+
+56
+00:04:05,747 --> 00:04:10,433
+Beyond Neptune lies Pluto, and the icy debris of the Kuiper Belt.
+
+57
+00:04:10,673 --> 00:04:17,387
+From above, the whole Solar System, every planet, every orbit, fits inside the center of São Paulo.
+
+58
+00:04:17,627 --> 00:04:22,612
+Light needs about five and a half hours to travel from the ball to Pluto.
+
+59
+00:04:22,852 --> 00:04:28,435
+Hold that number in mind: five and a half hours, across our entire planetary system.
+
+60
+00:04:29,505 --> 00:04:32,229
+Now, where is Voyager One?
+
+61
+00:04:32,949 --> 00:04:39,427
+It is the farthest machine humans have ever built, moving at sixty-one thousand kilometers per hour.
+
+62
+00:04:39,667 --> 00:04:44,909
+It swept past Jupiter and Saturn long ago, and it has been heading out ever since.
+
+63
+00:04:45,149 --> 00:04:51,819
+It was launched in nineteen seventy-seven, carrying a golden record with sounds and greetings from Earth.
+
+64
+00:04:52,059 --> 00:04:57,322
+Today, it is the most distant human-made object, and it still sends data back.
+
+65
+00:04:58,172 --> 00:05:02,795
+So, in our scale, how far has Voyager gone in forty-nine years?
+
+66
+00:05:03,335 --> 00:05:05,909
+Only four kilometers.
+
+67
+00:05:06,329 --> 00:05:07,284
+Four.
+
+68
+00:05:07,704 --> 00:05:16,913
+After half a century of flight at sixty-one thousand kilometers per hour, the most distant machine ever built would still be inside the city of São Paulo.
+
+69
+00:05:17,153 --> 00:05:20,154
+That is a walk of less than an hour.
+
+70
+00:05:20,394 --> 00:05:24,057
+Forty-nine years of flight, for a few city blocks.
+
+71
+00:05:24,907 --> 00:05:27,140
+And then the city ends.
+
+72
+00:05:27,560 --> 00:05:33,570
+Beyond that, there is nothing left to pass: just an empty road, stretching toward the horizon.
+
+73
+00:05:33,810 --> 00:05:37,515
+No more signs, no more towns, no more light.
+
+74
+00:05:37,755 --> 00:05:40,692
+Just the dark, and the long distance.
+
+75
+00:05:40,932 --> 00:05:44,915
+And we still have almost fifteen hundred kilometers to go.
+
+76
+00:05:45,765 --> 00:05:52,244
+Even the Oort Cloud, the vast sphere of icy bodies wrapped around the Sun, begins much farther out.
+
+77
+00:05:52,484 --> 00:05:57,789
+Voyager One would need about three hundred years just to reach its inner edge.
+
+78
+00:05:58,029 --> 00:06:01,436
+And roughly thirty thousand years to cross it.
+
+79
+00:06:01,676 --> 00:06:08,816
+Imagine a shell of frozen comets, billions of them, so far apart that you would never see one from another.
+
+80
+00:06:09,666 --> 00:06:11,494
+So let's keep going.
+
+81
+00:06:11,914 --> 00:06:16,408
+On this scale, one light-year is about fifteen hundred kilometers.
+
+82
+00:06:16,648 --> 00:06:27,884
+We leave the square behind, cross the state of São Paulo, climb into the mountains of Minas Gerais, and keep following the golden line, over ridges and valleys, toward the dry backlands of Bahia.
+
+83
+00:06:28,124 --> 00:06:32,320
+Even a modern jet would need about two hours for this stretch.
+
+84
+00:06:32,560 --> 00:06:37,588
+For Voyager, on this scale, that distance will never end in our lifetimes.
+
+85
+00:06:38,438 --> 00:06:42,421
+Finally the land opens up, and the Atlantic appears.
+
+86
+00:06:42,661 --> 00:06:45,172
+Salvador, in Bahia.
+
+87
+00:06:45,592 --> 00:06:50,428
+One thousand, four hundred and ninety-four kilometers from the football.
+
+88
+00:06:50,668 --> 00:06:54,352
+That is the length of a single light-year, at our scale.
+
+89
+00:06:54,592 --> 00:06:58,340
+From a football in a city square, to the sea in Bahia.
+
+90
+00:06:58,580 --> 00:07:03,245
+And that is only one light-year, a single step on the cosmic map.
+
+91
+00:07:04,095 --> 00:07:07,118
+From orbit, you can see it all at once.
+
+92
+00:07:07,358 --> 00:07:12,258
+A single light-year, drawn from the Praça da Sé to the coast of Bahia.
+
+93
+00:07:12,498 --> 00:07:18,827
+And Voyager One, after forty-nine years of flight, is still that tiny dot, inside São Paulo.
+
+94
+00:07:19,897 --> 00:07:22,941
+Now let's return to the real scale.
+
+95
+00:07:23,181 --> 00:07:28,721
+To fly across one light-year, at the speed of Voyager One, how long would you have to wait?
+
+96
+00:07:29,261 --> 00:07:32,860
+On the map, a light-year looked like a long flight.
+
+97
+00:07:33,100 --> 00:07:40,602
+In reality, it is nine trillion kilometers, and Voyager travels at about seventeen kilometers every second.
+
+98
+00:07:41,452 --> 00:07:45,094
+Seventeen thousand, seven hundred years.
+
+99
+00:07:45,514 --> 00:07:48,664
+Empires would rise and fall.
+
+100
+00:07:49,084 --> 00:07:52,256
+Languages would be born and forgotten.
+
+101
+00:07:52,496 --> 00:07:56,095
+Calendars would be reinvented again and again.
+
+102
+00:07:56,335 --> 00:08:00,339
+And through all of it, the spacecraft would simply keep flying.
+
+103
+00:08:00,579 --> 00:08:05,351
+That is how long you would have to wait, just to cross one single light-year.
+
+104
+00:08:06,201 --> 00:08:12,018
+Seventeen thousand years ago, people were only beginning to spread across the Americas.
+
+105
+00:08:12,258 --> 00:08:18,844
+About eleven thousand years ago, a young woman we call Luzia lived in what is now Minas Gerais.
+
+106
+00:08:19,084 --> 00:08:23,408
+Her skeleton is among the oldest ever found in the Americas.
+
+107
+00:08:23,648 --> 00:08:29,764
+And even her whole lifetime, and all the time since, would not be enough for Voyager to finish its trip.
+
+108
+00:08:30,614 --> 00:08:33,594
+Pyramids rise in Egypt.
+
+109
+00:08:34,014 --> 00:08:37,740
+Rome grows from a small city into an empire.
+
+110
+00:08:37,980 --> 00:08:43,691
+Ships cross the Atlantic, and in the year fifteen hundred, the Portuguese reach Brazil.
+
+111
+00:08:43,931 --> 00:08:48,746
+Thousands of years of human history, and Voyager is still on its way.
+
+112
+00:08:48,986 --> 00:08:56,552
+In that time, sailors learned to navigate by the stars, and astronomers slowly learned how far away those stars really are.
+
+113
+00:08:57,402 --> 00:09:00,062
+What if you travel by airplane?
+
+114
+00:09:00,602 --> 00:09:06,761
+At nine hundred kilometers per hour, one light-year would take about one point two million years.
+
+115
+00:09:07,001 --> 00:09:10,536
+A jet crosses Brazil in about three hours.
+
+116
+00:09:10,776 --> 00:09:15,889
+This flight would last four times longer than the entire history of our species.
+
+117
+00:09:16,739 --> 00:09:20,487
+What about a car, at a hundred kilometers per hour?
+
+118
+00:09:21,027 --> 00:09:23,260
+Eleven million years.
+
+119
+00:09:23,680 --> 00:09:27,642
+Eleven million years ago, there were no humans on Earth.
+
+120
+00:09:27,882 --> 00:09:31,288
+Our ancestors were still far in the future.
+
+121
+00:09:32,138 --> 00:09:36,718
+And on foot, walking five kilometers an hour, without ever stopping?
+
+122
+00:09:37,258 --> 00:09:44,868
+The landscape would change around you, again and again, as the ages roll by, and the rivers, mountains and forests are reshaped.
+
+123
+00:09:45,108 --> 00:09:46,338
+No rest.
+
+124
+00:09:46,758 --> 00:09:48,053
+No sleep.
+
+125
+00:09:48,473 --> 00:09:53,586
+Just one step after another, for longer than most of life's history on land.
+
+126
+00:09:54,436 --> 00:09:57,544
+Two hundred and sixteen million years.
+
+127
+00:09:57,784 --> 00:10:04,967
+You would have started that walk in the age of the first dinosaurs, in the Triassic, and you would only be arriving now.
+
+128
+00:10:05,207 --> 00:10:08,656
+That is how long a single light-year really is.
+
+129
+00:10:08,896 --> 00:10:15,354
+Back then, South America and Africa were still joined in a single enormous landmass called Pangaea.
+
+130
+00:10:16,204 --> 00:10:19,013
+And that is only the first step.
+
+131
+00:10:19,253 --> 00:10:23,108
+The nearest star beyond the Sun is Alpha Centauri.
+
+132
+00:10:23,348 --> 00:10:33,304
+On our scale, it lies more than six thousand kilometers from the football, as far as the distance from São Paulo to Cape Town, across the whole South Atlantic.
+
+133
+00:10:34,154 --> 00:10:42,574
+Farther still, at the center of our galaxy, twenty-six thousand light-years away, lies a black hole four million times the mass of the Sun.
+
+134
+00:10:42,814 --> 00:10:45,986
+Its name is Sagittarius A star.
+
+135
+00:10:46,226 --> 00:10:51,040
+Stars whip around it in only sixteen years, bent by its gravity.
+
+136
+00:10:51,280 --> 00:10:57,866
+And that is all still inside our own galaxy, the Milky Way, which holds hundreds of billions of stars.
+
+137
+00:10:58,716 --> 00:11:01,845
+The universe is bigger than we imagine.
+
+138
+00:11:02,085 --> 00:11:03,508
+Keep looking up.
+
+139
+00:11:03,928 --> 00:11:10,534
+Tonight, when you look at the sky, remember: the light reaching your eyes began its journey long before you were born.
+

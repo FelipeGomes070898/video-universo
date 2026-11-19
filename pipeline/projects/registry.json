@@ -1,0 +1,20 @@
+{
+ "order": [
+  "the_wall",
+  "the_wall_hd",
+  "earth_ages",
+  "mars_mission",
+  "unknown_horizons",
+  "infinite_frontiers",
+  "voyager_one",
+  "um_ano_luz"
+ ],
+ "legacy": [
+  "the_wall",
+  "the_wall_hd",
+  "earth_ages",
+  "mars_mission",
+  "unknown_horizons",
+  "infinite_frontiers"
+ ]
+}
