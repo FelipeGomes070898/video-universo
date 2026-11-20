@@ -10,12 +10,14 @@ Não releia nem peça o histórico de chats antigos.
 - Miniatura: 16:9, 1920x1080, modelo "split" (diagonal), foto real e texto grande de até 3 palavras (ex.: "1 LIGHT-YEAR").
 
 ## Conteúdo visual
+- REGRA PRINCIPAL: lugares, cidades, paisagens, pessoas e acontecimentos reais usam foto/vídeo real licenciado, não gráficos/3D genéricos; animação 2D (mapas, trajetórias, legendas) e 3D só para o que não existe em foto (fenômenos espaciais, escalas, microscópico). Registrar link, autor, plataforma e licença de cada item (credits.txt).
+- Não usar material protegido sem autorização; não contornar DRM/restrições de download; sem licença, buscar alternativa licenciada. Busca/recorte de vídeos do YouTube (CC BY) ainda NÃO implementado (pendente, ver HANDOFF).
 - Fotos reais livres em vez de gráficos desenhados. Fontes (`pipeline/engine/freemedia.py`, `pipeline/engine/nasa.py`):
   - NASA Image and Video Library (`images-api.nasa.gov`): crédito "NASA/JPL-Caltech" etc.; "NASA does not endorse this video".
   - Openverse (`api.openverse.org`, agrega Flickr, Wikimedia e rawpixel): só licenças CC0, PDM e CC BY (BY-SA só com `--allow-sa`; BY-NC/ND nunca). `page_size` máx. 20; pausar entre chamadas.
   - Wikimedia Commons (vídeos): sujeito a 429; Pixabay e Pexels bloqueiam acesso por script (403).
   - Mapa 3D: relevo SRTM (AWS Terrain Tiles) + NASA Blue Marble (GIBS) em `pipeline/engine/geo.py`.
-- Movimento (`pipeline/engine/media.py`): zoom de 1.0→1.1 a 1.3 (ease suave), pan opcional `[[x0,y0],[x1,y1]]` em -1..1, `fade=0.9` s entre fotos, vinheta 0.28, `fit="auto"` (fundo desfocado se a foto não é 16:9), moldura `mode="inset"` (ex.: `rect=[0.78,0.36,0.34]`) sobre cenas 3D. Em cena: `media=[dict(src="free:ov:<id>" | "nasa:<id>", at="#k", dur|to=..., zoom=[1.0,1.15])]`.
+- Movimento (`pipeline/engine/media.py`): zoom em ease suave; valores usados no um_ano_luz v2 (38 mídias): maioria 1.0→1.08 até 1.0→1.3, alguns zoom-out (1.1→1.0 e 1.5→1.0); pan opcional `[[x0,y0],[x1,y1]]` em -1..1; `fade` 0.9 s (alguns 0.6 s) entre fotos; vinheta 0.28, `fit="auto"` (fundo desfocado se a foto não é 16:9), moldura `mode="inset"` (ex.: `rect=[0.78,0.36,0.34]`) sobre cenas 3D. Em cena: `media=[dict(src="free:ov:<id>" | "nasa:<id>", at="#k", dur|to=..., zoom=[1.0,1.15])]`.
 - Crédito na tela em cada foto: "Credit: autor / licença".
 - Mapas/relevo com imagens reais da NASA.
 - Limites conhecidos: Wikimedia Commons bloqueia downloads por script (sem vídeos reais); muitas fotos têm só 1024 px (ficam suaves em tela cheia).
