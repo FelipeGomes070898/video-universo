@@ -62,5 +62,21 @@
   "recommendations": "se a retencao 30 s melhorar vs V1 (36,8%), manter gancho com midia real; comparar CTR A x B com >= 1000 impressoes",
   "created_ts": 1795439470,
   "updated_ts": 1795447828
+ },
+ {
+  "slug": "cassini_ocean",
+  "video_id": null,
+  "theme": "Cassini / Encelado / oceano",
+  "script_path": "cassini_ocean",
+  "title": "The Ocean Cassini Died to Protect",
+  "thumbnail_path": null,
+  "duration_s": 544.0,
+  "strategy": "{\"baseado_em\":\"analises/estrategia_2026-11-23.md\",\"gancho\":\"midia real aos 0 s; sem pergunta/CTA ate 30 s\",\"cta\":\"unico, apos o fim do sinal\",\"duracao\":\"9:04 (faixa 8-12 min)\",\"thumbnail\":\"A/B mesma frase UNDER THE ICE, muda so a imagem (ilustracao oficial x foto real)\",\"visual\":\"video SVS/filme oficial + dissolucao real\",\"medicao\":\"24 h, 7 d, 28 d\"}",
+  "published_at": null,
+  "positives": null,
+  "problems": "sem imagens de IA (conector so devolve miniatura); sem 4K; trilha e voz sinteticas; cena chemistry 69 s sem corte (mas com troca de plano a cada ~10 s)",
+  "recommendations": "comparar retencao aos 30 s com os 3 videos anteriores; se CTR A x B tiver >=1000 impressoes comparar com IC",
+  "created_ts": 1795458768,
+  "updated_ts": 1795458768
  }
 ]

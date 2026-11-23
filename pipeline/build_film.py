@@ -40,7 +40,7 @@ def main():
     ap.add_argument("--profile", default="documentary", choices=list(vc.PROFILES), help="perfil de voz: sage (senhor sabio) | narrator")
     ap.add_argument("--voice", default=None)
     ap.add_argument("--speed", type=float, default=None)
-    ap.add_argument("--audio", default="sober", choices=["sober", "cinematic"], help="sober: sem whooshes, musica baixa (SFX de cena sempre entram)")
+    ap.add_argument("--audio", default="sober", choices=["sober", "cinematic", "score"], help="sober: sem whooshes, musica baixa (SFX de cena sempre entram)")
     ap.add_argument("--tts-only", action="store_true")
     ap.add_argument("--music-vol", type=float, default=None, help="volume da musica (padrao: 0.36 sober / 0.55 cinematic). Para a voz ficar >= 12 dB acima da musica use ~0.14")
     ap.add_argument("--no-audio", action="store_true", help="so project.json + SRT (sem mixagem)")
@@ -183,6 +183,11 @@ def main():
                 m = freemedia.get(src[5:])
                 md.update(path=m["path"], kind=m["kind"], credit=md.get("credit") or m["credit"])
                 credits[m["id"]] = f'{m["title"]} - {m["credit"]} - {m.get("landing")}'
+            elif src.startswith("svs:"):
+                from engine import svs
+                m = svs.get(src[4:])
+                md.update(path=m["path"], kind=m["kind"], credit=md.get("credit") or m["credit"])
+                credits[m["id"]] = f'{m["title"]} - {m["credit"]} - {m["url"]} - license: {m["license"]}'
             elif src.startswith("nasa:"):
                 from engine import nasa
                 m = nasa.get(src[5:])
@@ -193,6 +198,11 @@ def main():
             _a = lambda v: v if isinstance(v, (int, float)) or v.startswith("@") else "@" + v
             md["start"] = res(_a(md.pop("at")), si)
             md["end"] = res(_a(md.pop("to")), si) if "to" in md else md["start"] + md.pop("dur")
+            if md.get("stretch") and md.get("kind") == "video":          # ajusta a velocidade para o trecho vstart..vend cobrir exatamente at..to
+                import cv2 as _cv
+                _c = _cv.VideoCapture(md["path"]); _d = _c.get(7) / max(_c.get(5), 1e-6); _c.release()
+                md["speed"] = max((md.get("vend", _d) - md.get("vstart", 0.0)) / max(md["end"] - md["start"], 1e-3), 0.05)
+                md["loop"] = False
             media.append(md)
             ev_times.append(md["start"])                    # troca de foto/video = evento visual (conta no lint de retencao)
         for lb in s.get("labels", []):
@@ -255,10 +265,25 @@ def main():
         wall = [si for si in scenes if si["spec"]["id"] == "wall"]
         if wall:
             hits.append((wall[0]["start"] - 0.3, "boom"))
+    moods, dips = [], []
+    if a.audio == "score":                              # trilha cinematografica sintetizada: humor por cena, impactos/risers e silencios ligados ao roteiro
+        for si in scenes:
+            sp_ = si["spec"]
+            _aa = lambda v: v if isinstance(v, (int, float)) or str(v).startswith("@") else "@" + v
+            moods.append(float(sp_.get("mood", 0.5)))
+            if sp_.get("impact"):
+                hits.append((si["start"] - 0.1, "impact"))
+            for r_ in sp_.get("riser", []):
+                hits.append((res(_aa(r_), si), "riser"))
+            for d_ in sp_.get("impact_at", []):
+                hits.append((res(_aa(d_), si), "impact"))
+            for d0, d1 in sp_.get("music_dip", []):
+                dips.append((res(_aa(d0), si), res(_aa(d1), si)))
     hits = hits + sfx_list
-    json.dump(dict(profile=a.profile, voice=a.voice, speed=a.speed, audio=a.audio, music_vol=(a.music_vol if a.music_vol is not None else (0.55 if a.audio == "cinematic" else 0.36)), sfx_hits=[[h[0], h[1]] for h in hits]), open(os.path.join(out_dir, "audio_meta.json"), "w"))
-    music = mixer.make_music([(si["start"], si["end"]) for si in scenes], total, tmp, hits)
-    mixer.mix(npath, music, total, os.path.join(out_dir, "audio_mix.wav"), tmp, music_vol=a.music_vol if a.music_vol is not None else (0.55 if a.audio == "cinematic" else 0.36))
+    json.dump(dict(profile=a.profile, voice=a.voice, speed=a.speed, audio=a.audio, music_vol=(a.music_vol if a.music_vol is not None else (0.55 if a.audio == "cinematic" else 0.2 if a.audio == "score" else 0.36)), sfx_hits=[[h[0], h[1]] for h in hits]), open(os.path.join(out_dir, "audio_meta.json"), "w"))
+    music = (mixer.make_score([(si["start"], si["end"]) for si in scenes], moods, total, tmp, hits, dips) if a.audio == "score"
+             else mixer.make_music([(si["start"], si["end"]) for si in scenes], total, tmp, hits))
+    mixer.mix(npath, music, total, os.path.join(out_dir, "audio_mix.wav"), tmp, music_vol=a.music_vol if a.music_vol is not None else (0.55 if a.audio == "cinematic" else 0.2 if a.audio == "score" else 0.36))
     print("audio e projeto prontos:", os.path.join(out_dir, "audio_mix.wav"))
 
 

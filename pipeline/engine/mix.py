@@ -69,6 +69,114 @@ def make_music(scene_bounds, total, tmpdir, hits):
     return out[: int(SR * total)]
 
 
+# --------------------------------------------------------------------------- TRILHA 'score' (cinematografica, sintetizada)
+PROG = [[110.0, 164.81, 220.0, 261.63, 329.63], [87.31, 130.81, 174.61, 220.0, 261.63], [130.81, 196.0, 261.63, 329.63], [98.0, 146.83, 196.0, 246.94],
+        [146.83, 220.0, 293.66, 349.23], [164.81, 246.94, 329.63, 392.0]]          # Am F C G Dm Em
+
+
+def _lp(y, cutoff):
+    sp = np.fft.rfft(y)
+    fr = np.fft.rfftfreq(len(y), 1 / SR)
+    return np.fft.irfft(sp / (1 + (fr / cutoff) ** 2), len(y))
+
+
+def _strings(freqs, dur, rng, mood):
+    """pad de cordas: serras destonadas com vibrato, passa-baixa; mais notas/oitava grave (metais) com humor alto."""
+    n = int(SR * dur)
+    t = np.arange(n) / SR
+    y = np.zeros(n)
+    notes = list(freqs) if mood > 0.35 else list(freqs)[:3]
+    for f in notes:
+        for _ in range(4):
+            det = 1 + rng.uniform(-0.006, 0.006)
+            vib = 1 + 0.0045 * np.sin(2 * np.pi * (4.8 + rng.uniform(-0.4, 0.4)) * t + rng.uniform(0, 6))
+            ph = np.cumsum(f * det * vib) / SR + rng.uniform(0, 1)
+            y += 2 * (ph % 1) - 1
+    if mood > 0.6:                                              # camada grave tipo metais/contrabaixos
+        for _ in range(3):
+            ph = np.cumsum(freqs[0] * 0.5 * (1 + rng.uniform(-0.004, 0.004)) * np.ones(n)) / SR
+            y += 1.4 * _lp(2 * (ph % 1) - 1, 380)
+    y = _lp(y, 900 + 1700 * mood)
+    swell = 0.75 + 0.25 * np.sin(2 * np.pi * t / max(dur, 1) * 1.5 + rng.uniform(0, 6))
+    env = np.clip(t / 3.5, 0, 1) * np.clip((dur - t) / 3.5, 0, 1)
+    return y / (np.abs(y).max() + 1e-9) * env * swell
+
+
+def _reverb(y, seconds, rng, mix=0.35):
+    m = int(SR * seconds)
+    ir = rng.standard_normal(m) * np.exp(-np.arange(m) / (SR * seconds / 4.5))
+    n = len(y) + m
+    nn = 1 << (n - 1).bit_length()
+    w = np.fft.irfft(np.fft.rfft(y, nn) * np.fft.rfft(ir, nn), nn)[: len(y)]
+    return y * (1 - mix) + w / (np.abs(w).max() + 1e-9) * np.abs(y).max() * mix
+
+
+def impact(gain=0.9):
+    """tímpano/impacto grave com transiente de ruído."""
+    rng = np.random.default_rng(3)
+    m = int(SR * 4.5)
+    t = np.arange(m) / SR
+    f = 46 + 70 * np.exp(-t * 9)
+    y = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 1.1) + 0.5 * _band(m, 60, 700, rng) * np.exp(-t * 7)
+    return np.stack([y * gain, y * gain], 1)
+
+
+def riser(dur=6.0, gain=0.6):
+    """ruído com brilho crescente + glissando; termina no instante do impacto."""
+    rng = np.random.default_rng(5)
+    m = int(SR * dur)
+    t = np.arange(m) / SR
+    k = t / dur
+    nz = _band(m, 900, 7000, rng) * k ** 2.2
+    gl = np.sin(2 * np.pi * np.cumsum(180 + 1500 * k ** 2) / SR) * k ** 2.5 * 0.35
+    y = (nz * 0.7 + gl) * gain
+    return np.stack([y, np.roll(y, 250)], 1)
+
+
+def make_score(scene_bounds, moods, total, tmpdir, hits, dips=()):
+    """scene_bounds [(ini, fim)], moods [0..1] por cena, hits [(t, kind|(sfx,dur,gain))] (kind: 'impact'|'riser'), dips [(t0, t1)] = janelas de silencio da musica."""
+    rng = np.random.default_rng(31)
+    n = int(SR * total) + SR * 6
+    out = np.zeros((n, 2), np.float32)
+    t_all = np.arange(n) / SR
+    drone = (np.sin(2 * np.pi * 55.0 * t_all) * 0.5 + np.sin(2 * np.pi * 82.41 * t_all + 0.7) * 0.28 + np.sin(2 * np.pi * 110.0 * t_all * (1 + 0.0012 * np.sin(2 * np.pi * t_all / 17))) * 0.14)
+    drone *= (0.55 + 0.45 * np.sin(2 * np.pi * t_all / 23.0 + 1.1) ** 2) * np.clip(t_all / 4.0, 0, 1) * 0.55
+    out[:, 0] += drone; out[:, 1] += drone
+    for i, ((s, e), mood) in enumerate(zip(scene_bounds, moods)):
+        dur = (e - s) + 7.0
+        pad = _strings(PROG[i % len(PROG)], dur, rng, mood)
+        pad = _reverb(pad, 2.8, rng) * (0.35 + 0.65 * mood)
+        st = np.stack([pad, np.roll(pad, 400)], 1)
+        o = max(int((s - 3.5) * SR), 0)
+        out[o:o + len(st)] += st[: n - o]
+    for t, kind in hits:
+        o = int(t * SR)
+        if o < 0:
+            continue
+        if isinstance(kind, (tuple, list)):
+            w = sfx(kind[0], kind[1], kind[2], rng)
+        elif kind == "impact":
+            w = impact()
+        elif kind == "riser":
+            w = riser(6.0); o = max(o - len(w), 0)
+        elif kind == "boom":
+            w = boom()
+        else:
+            w = whoosh(1.6, rng, 0.4)
+        out[o:o + len(w)] += w[: n - o]
+    g = np.ones(n, np.float32)                                   # silencio dramatico: musica cai a ~5% nas janelas
+    for a, b in dips:
+        ia, ib = int(a * SR), int(b * SR)
+        r = int(1.2 * SR)
+        tgt = np.ones(n, np.float32)
+        tgt[max(ia - r, 0):ia] = np.linspace(1, 0.05, ia - max(ia - r, 0))
+        tgt[ia:ib] = 0.05
+        tgt[ib:ib + r] = np.linspace(0.05, 1, len(tgt[ib:ib + r]))
+        g = np.minimum(g, tgt)
+    out *= g[:, None]
+    return out[: int(SR * total)]
+
+
 def mix(narr_wav, music, total, out_wav, tmpdir, music_vol=0.55):
     mpath = os.path.join(tmpdir, "music.wav")
     _write(mpath, music * 0.9 / max(np.abs(music).max(), 1e-6))

@@ -23,6 +23,10 @@ NOTA: a partir desta sessão o código novo (`pipeline/channel/`, `channel.py`, 
 - Vídeo `cassini_final_dive` (Why NASA Flew Its Own Spacecraft Into Saturn), 10:10, entregue em `entregas/cassini_final_dive/` do ARCHIVE-STUDIO-AI (branch `ccr-1871013c-o689be`, partes de 95 MB + SHA256 conferido) e textos em `entregas/cassini_final_dive/` aqui (roteiro, publicacao, credits, captions). Dossiê (18 fatos com fonte) em `projects/cassini_final_dive/dossier.json` no ARCHIVE-STUDIO-AI. QC: sem FAIL; restam WARN "cena sem corte 61 s (launch)" e MANUAL "voz humana (ouvir)". Registrado em `productions` (video_id BGtOdwBvK1g). Canal: o do token usado (conferir no Studio); thumbnail B enviada pela API (A/B só no Studio).
 - Gerado com base em `analises/estrategia_2026-11-23.md` (gancho com mídia real, sem CTA em 30 s, CTA único no pico).
 
+## Produção "The Ocean Cassini Died to Protect" (cassini_ocean) — pronta, NÃO publicada
+- Refeito do zero a partir do vídeo da Cassini anterior (ângulo: oceano de Encélado). 9:04, 1080p, 13 cenas, mídia real NASA (SVS + Image Library), QC sem FAIL (restam: cena `chemistry` 69 s sem corte [tem troca de plano a cada ~10 s] e "voz humana" = ouvir). Entrega completa em `entregas/cassini_ocean/` do ARCHIVE-STUDIO-AI (branch `ccr-1871013c-o689be`): vídeo original em 3 partes (SHA256 conferido), thumbnails A/B, legendas, créditos, roteiro, publicacao.md, production_breakdown.md, licensing_report.md, timeline.edl, áudios (narração, trilha, mix), dossiê (29 fatos), QC, `fetch_assets.sh`. Textos aqui em `entregas/cassini_ocean/`. Registrado em `productions` (sem video_id até publicar).
+- O vídeo anterior da Cassini (`cassini_final_dive`, id YouTube BGtOdwBvK1g, privado) segue no canal; usuário decide manter/apagar (não apague sem pedido).
+
 ## PENDENTE
 - [x] Copiar o pipeline (scripts de render, narração, thumbnail, QC, upload) do repositório ARCHIVE-STUDIO-AI para `pipeline/` aqui. FEITO (49 arquivos; sem tokens; inclui `pipeline/tools/youtube_upload.sh`).
 - [x] Copiar roteiro, publicacao.md, credits.txt e captions.srt de `entregas/um_ano_luz_v2/` para `entregas/`. FEITO (só texto: roteiro.md, publicacao.md, credits.txt, captions.srt; sem MP4/áudio/imagens, que seguem no ARCHIVE-STUDIO-AI e no YouTube).
@@ -31,6 +35,7 @@ NOTA: a partir desta sessão o código novo (`pipeline/channel/`, `channel.py`, 
 - [ ] Após ~48 h de cada vídeo: `sync` + `retention <video_id> <slug>`; depois 7 d e 28 d; registrar com `channel.py register` e `compare`.
 - [ ] Implementar busca/recorte de vídeos do YouTube só com licença CC BY (YouTube Data API `videoLicense=creativeCommon`) com registro de origem para os créditos. NÃO existe no pipeline.
 - [ ] Usuário: publicar o Cassini (título, descrição, tags, thumbnails A/B, `captions.srt`, comentário fixado com `credits.txt`); depois `channel.py register cassini_final_dive --video-id <id>` e medir em 24 h/7 d/28 d. Escolher a thumbnail A (Saturno) ou B (rosto) no teste A/B do Studio.
+- [ ] Usuário: publicar o cassini_ocean (título, descrição, tags, thumbnails A/B, `captions.srt`, comentário fixado com `credits.txt`, marcar conteúdo sintético); depois `channel.py register cassini_ocean --video-id <id>` e medir em 24 h/7 d/28 d.
 - [ ] Usuário: publicar a v2, fixar comentário de créditos, subir captions.srt.
 
 ## Notas do pipeline copiado

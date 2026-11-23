@@ -1,0 +1,380 @@
+1
+00:00:00,550 --> 00:00:05,322
+There is a small, frozen moon at Saturn that should be completely dead.
+
+2
+00:00:05,562 --> 00:00:09,417
+Instead, it is shooting fountains of water into space.
+
+3
+00:00:09,657 --> 00:00:17,458
+For more than a decade, a single machine flew through those fountains, tasted them, and sent back a message nobody expected.
+
+4
+00:00:17,698 --> 00:00:25,158
+Then NASA made a decision that sounds impossible: to end that machine's mission on purpose, before anything went wrong.
+
+5
+00:00:25,398 --> 00:00:28,997
+To understand why, we have to begin with the moon.
+
+6
+00:00:29,997 --> 00:00:35,558
+William Herschel discovered Enceladus in 1789.
+
+7
+00:00:35,798 --> 00:00:42,426
+For two centuries it was only a faint dot of light, a moon about five hundred kilometers wide.
+
+8
+00:00:42,666 --> 00:00:49,038
+Its surface is covered with clean, bright ice, which reflects almost all of the sunlight that reaches it.
+
+9
+00:00:49,278 --> 00:00:52,258
+That should make it frozen and quiet.
+
+10
+00:00:52,718 --> 00:00:57,831
+But at its south pole, long cracks, nicknamed tiger stripes, cut through the ice.
+
+11
+00:00:58,071 --> 00:01:04,315
+From those cracks, jets of ice particles, water vapor and organic chemicals escape into space.
+
+12
+00:01:04,555 --> 00:01:12,122
+Cassini first saw the plumes shortly after it arrived at Saturn, and the discovery changed what the whole mission was about.
+
+13
+00:01:13,122 --> 00:01:19,985
+Cassini left Earth on the fifteenth of October, 1997, on top of a Titan rocket.
+
+14
+00:01:20,225 --> 00:01:27,279
+It carried a European probe called Huygens, built for a single purpose: to fall through the atmosphere of Titan.
+
+15
+00:01:27,519 --> 00:01:34,702
+The trip took almost seven years, and along the way Cassini borrowed speed from Venus twice, then Earth, then Jupiter.
+
+16
+00:01:34,942 --> 00:01:43,341
+In July 2004, Cassini fired its main engine for ninety-six minutes, to slow down and let Saturn's gravity capture it.
+
+17
+00:01:43,581 --> 00:01:47,713
+It became the first spacecraft ever to orbit the planet.
+
+18
+00:01:47,953 --> 00:01:51,231
+The plan was four years of exploration.
+
+19
+00:01:51,471 --> 00:01:53,747
+It lasted thirteen.
+
+20
+00:01:54,747 --> 00:02:01,461
+In 2008, Cassini flew only fifty kilometers above Enceladus, straight through the spray.
+
+21
+00:02:01,701 --> 00:02:05,107
+Its instruments did not just look at the plume.
+
+22
+00:02:05,347 --> 00:02:06,749
+They sniffed it.
+
+23
+00:02:07,169 --> 00:02:12,069
+What they tasted was not what anyone had predicted for a frozen moon.
+
+24
+00:02:12,309 --> 00:02:16,718
+The water was coming from a global ocean hidden beneath the ice.
+
+25
+00:02:17,718 --> 00:02:20,591
+Two instruments did the tasting.
+
+26
+00:02:21,011 --> 00:02:25,549
+One was a mass spectrometer, which weighs the molecules in the gas.
+
+27
+00:02:25,789 --> 00:02:31,009
+The other was a dust analyzer, which examines the ice grains one by one.
+
+28
+00:02:31,249 --> 00:02:34,997
+More than ninety percent of the gas was water vapor.
+
+29
+00:02:35,237 --> 00:02:43,273
+The rest included carbon dioxide, methane, and simple organic molecules, in amounts higher than scientists expected.
+
+30
+00:02:43,513 --> 00:02:49,074
+The ice grains carried salt, and also tiny grains of silica, the stuff of sand.
+
+31
+00:02:49,314 --> 00:02:55,323
+Silica like that forms where hot water, above about ninety degrees Celsius, meets rock.
+
+32
+00:02:55,563 --> 00:02:58,543
+So the ocean is not only there.
+
+33
+00:02:58,783 --> 00:03:02,787
+Its floor is warm, with hot water flowing through the rock.
+
+34
+00:03:03,027 --> 00:03:15,607
+In October 2015, Cassini made its deepest pass through the plume, skimming just forty-nine kilometers above the ice, and its instruments registered molecular hydrogen, roughly one percent of the gas.
+
+35
+00:03:15,847 --> 00:03:25,995
+On Earth, hydrogen like that comes from hot water reacting with rock on the seafloor, and whole ecosystems around hydrothermal vents live off that chemical energy.
+
+36
+00:03:26,995 --> 00:03:31,746
+Scientists often boil the search for life down to three ingredients.
+
+37
+00:03:31,986 --> 00:03:33,537
+Liquid water.
+
+38
+00:03:33,957 --> 00:03:36,211
+Chemical building blocks.
+
+39
+00:03:36,631 --> 00:03:39,078
+And a source of energy.
+
+40
+00:03:39,498 --> 00:03:43,353
+On Enceladus, Cassini found signs of all three.
+
+41
+00:03:43,593 --> 00:03:46,189
+That does not mean there is life.
+
+42
+00:03:46,429 --> 00:03:50,155
+It means there is a place where life would have a chance.
+
+43
+00:03:50,395 --> 00:03:57,109
+And that, more than anything else, is what turned a quiet moon into the most important target Cassini had left.
+
+44
+00:03:57,349 --> 00:04:01,609
+Everything that followed was built around that one question.
+
+45
+00:04:02,609 --> 00:04:08,149
+While the plumes made the headlines, Cassini kept working across the whole Saturn system.
+
+46
+00:04:08,389 --> 00:04:14,099
+It flew past dark, battered moons, and it watched a storm wrap around the entire planet.
+
+47
+00:04:14,339 --> 00:04:19,026
+It mapped the rings, and the six-sided jet stream circling the north pole.
+
+48
+00:04:19,266 --> 00:04:26,769
+In thirteen years it completed nearly three hundred orbits, and made one hundred sixty-two targeted flybys of moons.
+
+49
+00:04:27,009 --> 00:04:32,975
+And almost every one of those orbits was steered by the gravity of a single moon: giant Titan.
+
+50
+00:04:33,975 --> 00:04:37,041
+The story did not end with Cassini.
+
+51
+00:04:37,281 --> 00:04:43,653
+In 2023, the James Webb Space Telescope took a first look at Enceladus.
+
+52
+00:04:43,893 --> 00:04:49,561
+It found that the plume of water stretches more than twenty times the size of the moon itself.
+
+53
+00:04:49,801 --> 00:04:56,023
+The fountains that Cassini discovered are so powerful that they feed the entire Saturn system.
+
+54
+00:04:57,023 --> 00:05:01,390
+Cassini's other great discovery came from the probe it carried.
+
+55
+00:05:01,630 --> 00:05:07,853
+On the fourteenth of January, 2005, Huygens parachuted into the haze of Titan.
+
+56
+00:05:08,093 --> 00:05:15,851
+For about three and a half hours it was in radio contact with Cassini, and it captured about three thousand five hundred images.
+
+57
+00:05:16,091 --> 00:05:20,714
+This is what they look like, assembled into a time-lapse of the descent.
+
+58
+00:05:20,954 --> 00:05:26,323
+Bright highlands cut by what look like drainage channels, and dark plains below.
+
+59
+00:05:26,783 --> 00:05:30,019
+But Titan's rivers do not carry water.
+
+60
+00:05:30,259 --> 00:05:36,653
+At about minus one hundred eighty degrees Celsius, it is methane that falls as rain and flows.
+
+61
+00:05:36,893 --> 00:05:41,537
+Cassini's radar later found lakes and seas of liquid methane.
+
+62
+00:05:41,777 --> 00:05:45,055
+Two ocean worlds, around a single planet.
+
+63
+00:05:46,055 --> 00:05:50,678
+By 2017, Cassini had outlived every plan.
+
+64
+00:05:50,918 --> 00:05:54,922
+It was healthy, but almost out of the fuel it used to steer.
+
+65
+00:05:55,162 --> 00:05:59,422
+A spacecraft that cannot steer cannot be told where to go.
+
+66
+00:05:59,662 --> 00:06:03,965
+And Cassini had been built on Earth, where microbes are everywhere.
+
+67
+00:06:04,205 --> 00:06:10,577
+If it ever crashed into Enceladus, it could contaminate the very ocean we most wanted to study.
+
+68
+00:06:10,817 --> 00:06:18,639
+Scientists call this planetary protection: a rule that guards other worlds, and also the integrity of our own search for life.
+
+69
+00:06:18,879 --> 00:06:25,059
+So the safest ending was to send Cassini into Saturn itself, where it would burn up completely.
+
+70
+00:06:25,519 --> 00:06:28,627
+But NASA did not simply switch it off.
+
+71
+00:06:28,867 --> 00:06:32,103
+It chose one last act of exploration.
+
+72
+00:06:33,103 --> 00:06:39,838
+The final chapter began with a goodbye to Titan, on the twenty-second of April, 2017.
+
+73
+00:06:40,078 --> 00:06:48,071
+That last flyby used Titan's gravity to tilt Cassini's orbit so that it threaded the gap between Saturn and its innermost ring.
+
+74
+00:06:48,311 --> 00:06:52,038
+Nobody had ever sent a spacecraft through that gap.
+
+75
+00:06:52,278 --> 00:07:00,570
+It is roughly two thousand kilometers across, and dust there could damage the spacecraft, so the dish antenna pointed ahead like a shield.
+
+76
+00:07:00,810 --> 00:07:09,849
+Over the next five months Cassini passed through the gap twenty-two times, measuring Saturn's gravity and magnetic field from closer than ever before.
+
+77
+00:07:10,089 --> 00:07:17,933
+On the last five passes it brushed the outermost layer of the atmosphere and sampled Saturn's air directly, for the first time.
+
+78
+00:07:18,173 --> 00:07:24,907
+Those measurements showed that the rings weigh less than expected, and that they are slowly raining onto the planet.
+
+79
+00:07:25,907 --> 00:07:32,087
+Hours before the end, Cassini took its final picture of the place where it would enter the atmosphere.
+
+80
+00:07:32,327 --> 00:07:37,569
+Then it turned its antenna toward Earth, and began sending its science data live.
+
+81
+00:07:37,809 --> 00:07:42,495
+As the air thickened, the thrusters fought to keep the dish pointed home.
+
+82
+00:07:42,735 --> 00:07:47,294
+Cassini was falling at more than seventy thousand miles an hour.
+
+83
+00:07:47,534 --> 00:07:53,074
+At about fifteen hundred kilometers above the clouds, the atmosphere began to win.
+
+84
+00:07:53,314 --> 00:07:57,233
+The spacecraft started to tumble, and the signal stopped.
+
+85
+00:07:57,473 --> 00:08:02,906
+Saturn is so far away that radio waves need eighty-three minutes to reach Earth.
+
+86
+00:08:03,146 --> 00:08:09,113
+At 11:55 Universal Time, the engineers on Earth saw the line go flat.
+
+87
+00:08:09,353 --> 00:08:13,570
+By then, Cassini had already been gone for eighty-three minutes.
+
+88
+00:08:14,570 --> 00:08:21,454
+Cassini sent back more than four hundred fifty thousand images and over six hundred gigabytes of data.
+
+89
+00:08:21,694 --> 00:08:28,343
+It found ocean worlds, seas of methane, and rings that may be only a few hundred million years old.
+
+90
+00:08:28,583 --> 00:08:34,571
+If you enjoy missions told like this, subscribe, because the next story is already in production.
+
+91
+00:08:34,811 --> 00:08:41,567
+And Cassini left behind a question that is still open: is anything alive in the ocean of Enceladus?
+
+92
+00:08:42,107 --> 00:08:49,717
+NASA's Dragonfly is planned to fly on Titan, and Europa Clipper is already on its way to the ocean moon of Jupiter.
+
+93
+00:08:49,957 --> 00:08:52,915
+Cassini did not find life.
+
+94
+00:08:53,335 --> 00:08:55,953
+It found a map of where to look.
+
+95
+00:08:56,193 --> 00:09:01,029
+And it made sure that when we get there, those oceans will still be untouched.
+

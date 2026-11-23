@@ -19,7 +19,20 @@ def _ease(x):
 
 class MediaLayer:
     def __init__(self, items, W, H):
-        self.items, self.W, self.H = items or [], W, H
+        self.items, self.W, self.H = sorted(items or [], key=lambda m: m["start"]), W, H
+        # DISSOLUCAO REAL: se outro plano comeca logo apos o fim deste (< 1,2 s), este fica opaco ate o seguinte terminar de aparecer
+        # (sem 'mergulho' ao preto entre planos consecutivos). Plano final de uma sequencia continua com fade-out normal.
+        for i, a in enumerate(self.items):
+            a.pop("_end2", None); a.pop("_nofo", None)
+            if a.get("mode", "full") != "full":
+                continue
+            for b in self.items[i + 1:]:
+                if b.get("mode", "full") != "full" or b["start"] < a["start"] + 0.5:
+                    continue
+                if 0 <= b["start"] - a["end"] < 1.2 or (b["start"] < a["end"] and b["start"] >= a["start"] + 0.5):
+                    a["_end2"] = max(a["end"], b["start"] + b.get("fade", 0.8))
+                    a["_nofo"] = True
+                break
         self._img, self._cap, self._last, self._txt = {}, {}, {}, {}
 
     # ------------------------------------------------------------ fontes
@@ -111,10 +124,12 @@ class MediaLayer:
             return img
         out = None
         for it in self.items:
-            if not (it["start"] <= t <= it["end"]):
+            end_eff = it.get("_end2", it["end"])
+            if not (it["start"] <= t <= end_eff):
                 continue
             fd = max(min(it.get("fade", 0.8), (it["end"] - it["start"]) / 2.2), 1e-3)
-            a = min(_ease((t - it["start"]) / fd), _ease((it["end"] - t) / fd)) * it.get("opacity", 1.0)
+            a_out = 1.0 if it.get("_nofo") else _ease((it["end"] - t) / fd)
+            a = min(_ease((t - it["start"]) / fd), a_out) * it.get("opacity", 1.0)
             if a <= 0.002:
                 continue
             src = self._video(it, t) if it["kind"] == "video" else self._image(it["path"])
