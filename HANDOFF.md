@@ -12,10 +12,18 @@
 - Valores técnicos do BRIEF conferidos no código/projeto: voz `am_onyx` perfil `sage` 0.923 (audio_meta.json), 24 fps, CRF 18, ducking/loudnorm/EQ de `engine/mix.py`, 38 mídias com zoom 1.0→1.08–1.3 (+ zoom-outs) e fade 0.6/0.9. Parâmetros do render por blocos (192 frames, 3 workers) vêm da prática da sessão, não de um arquivo de configuração.
 - Varredura de segredos (prefixos de tokens do Google/GitHub, Bearer, chaves privadas) no repositório: nada encontrado; sem arquivos de mídia versionados.
 
+## Sessão 2026-11-23 — integração com o canal (somente leitura)
+CONCLUÍDO E TESTADO (offline): `pipeline/channel/` + `pipeline/channel.py`; `python channel.py selftest` = 22 verificações OK (GET-only, hosts permitidos, token fora do git, métrica indisponível não inventada, janelas 24 h/7 d/28 d, IC de CTR, retenção × roteiro, export/import, porta da estratégia). Thumbs testado em 1 imagem local. `produce.py init` agora exige relatório estratégico (testado: bloqueia sem relatório, libera com, `--sem-estrategia` pula). Banco semente + `analises/estrategia_2026-11-23.md` + `analises/historico/` gerados.
+NÃO TESTADO (sem token/rede com o Google nesta sessão): OAuth local (`connect/refresh/disconnect`), chamadas reais às APIs, download da miniatura publicada, nomes/semântica das métricas de impressões/CTR no Analytics, Reporting API (não implementada).
+
+NOTA: a partir desta sessão o código novo (`pipeline/channel/`, `channel.py`, porta de estratégia no `produce.py`) existe SÓ no video-universo; o `pipeline/` aqui passa a ser a fonte da verdade (o ARCHIVE-STUDIO-AI não tem essas mudanças).
+
 ## PENDENTE
 - [x] Copiar o pipeline (scripts de render, narração, thumbnail, QC, upload) do repositório ARCHIVE-STUDIO-AI para `pipeline/` aqui. FEITO (49 arquivos; sem tokens; inclui `pipeline/tools/youtube_upload.sh`).
 - [x] Copiar roteiro, publicacao.md, credits.txt e captions.srt de `entregas/um_ano_luz_v2/` para `entregas/`. FEITO (só texto: roteiro.md, publicacao.md, credits.txt, captions.srt; sem MP4/áudio/imagens, que seguem no ARCHIVE-STUDIO-AI e no YouTube).
 - [ ] Corrigir QC: voz 12 dB acima da música; lacuna de 80 s no mapa de curiosidade.
+- [ ] PRIMEIRO USO REAL: autorizar (local: `channel.py connect`; nuvem: `request_credential` host www.googleapis.com com escopos youtube.readonly + yt-analytics.readonly), rodar `channel.py sync`, conferir `availability` (o que a API recusou), ajustar nomes de métricas e rodar `channel.py strategy`.
+- [ ] Após ~48 h de cada vídeo: `sync` + `retention <video_id> <slug>`; depois 7 d e 28 d; registrar com `channel.py register` e `compare`.
 - [ ] Implementar busca/recorte de vídeos do YouTube só com licença CC BY (YouTube Data API `videoLicense=creativeCommon`) com registro de origem para os créditos. NÃO existe no pipeline.
 - [ ] Usuário: publicar a v2, fixar comentário de créditos, subir captions.srt.
 
@@ -25,4 +33,4 @@
 - Regras completas anteriores: seção CLAUDE.md do ARCHIVE-STUDIO-AI (novidade: nenhuma cena pode repetir vídeo anterior, `engine/novelty.py`).
 
 ## Como começar um chat novo
-"Leia BRIEF.md e HANDOFF.md do repositório video-universo e continue: <tarefa>".
+"Leia o BRIEF.md e o HANDOFF.md do repositório video-universo. Consulte as análises atualizadas do meu canal no YouTube e continue o projeto seguindo integralmente os padrões, configurações e diretrizes documentados."

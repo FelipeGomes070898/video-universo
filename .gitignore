@@ -8,3 +8,10 @@ __pycache__/
 *.pyc
 .env
 *token*
+
+# dados do canal e credenciais NUNCA no git
+data/
+*.db
+client_secret*.json
+youtube_token.json
+*.pem

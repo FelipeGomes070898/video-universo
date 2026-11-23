@@ -1,0 +1,210 @@
+[
+ {
+  "video_id": "manual:V1",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "views",
+  "value": 12.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "manual:V1",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "impressions",
+  "value": 165.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "manual:V1",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "ctr",
+  "value": 0.0365,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "manual:V1",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "averageViewDuration",
+  "value": 132.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "manual:V1",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "averageViewPercentage",
+  "value": 18.5,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "manual:V1",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "estimatedMinutesWatched",
+  "value": 24.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "manual:V1",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "subscribersGained",
+  "value": 0.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "manual:V1",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "likes",
+  "value": 0.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "manual:V1",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "comments",
+  "value": 0.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "manual:V2",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "views",
+  "value": 1.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "manual:V2",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "impressions",
+  "value": 12.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "manual:V2",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "ctr",
+  "value": 0.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "manual:V2",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "averageViewDuration",
+  "value": 3.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "manual:V2",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "estimatedMinutesWatched",
+  "value": 0.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "manual:V2",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "subscribersGained",
+  "value": 0.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "manual:V2",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "likes",
+  "value": 0.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "manual:V2",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "comments",
+  "value": 0.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "views",
+  "value": 8.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "impressions",
+  "value": 208.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "ctr",
+  "value": 0.014,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "averageViewDuration",
+  "value": 282.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "averageViewPercentage",
+  "value": 27.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "estimatedMinutesWatched",
+  "value": 36.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "subscribersGained",
+  "value": 0.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "likes",
+  "value": 0.0,
+  "source": "manual_studio_prints"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1763424000,
+  "win": "lifetime",
+  "metric": "comments",
+  "value": 0.0,
+  "source": "manual_studio_prints"
+ }
+]

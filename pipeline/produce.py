@@ -44,7 +44,23 @@ SCENES = [
 '''
 
 
+def _strategy_gate(a):
+    """Ciclo: analisar o canal ANTES de planejar/roteirizar. Exige analises/estrategia_*.md recente (<= 14 dias): python channel.py sync && python channel.py strategy."""
+    from channel import strategy
+    ok, path, age = strategy.fresh(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "analises"))
+    if ok:
+        print(f"[estrategia] usando {path} ({age} dia(s)). LEIA antes de escrever o roteiro.")
+        return
+    if getattr(a, "sem_estrategia", None):
+        print(f"[estrategia] IGNORADA a pedido do usuario: {a.sem_estrategia}")
+        return
+    sys.exit("BLOQUEADO: nao ha relatorio estrategico do canal recente (analises/estrategia_*.md, <= 14 dias).\n"
+             "Rode: python channel.py sync && python channel.py strategy  (ou, sem acesso ao canal: python channel.py seed-manual && python channel.py strategy)\n"
+             "Para pular, so com ordem do usuario: --sem-estrategia \"motivo\"")
+
+
 def init(a):
+    _strategy_gate(a)
     d = os.path.join("projects", a.slug)
     brief = dict(title=a.tema, tema=a.tema, objetivo=a.objetivo, publico=a.publico, platform=a.plataforma, duration_seconds=a.duracao,
                  language=a.idioma, estilo=a.estilo, format=a.formato, factual=a.factual)
@@ -146,6 +162,7 @@ def main():
     i.add_argument("--objetivo", default=""); i.add_argument("--publico", default=""); i.add_argument("--plataforma", default="youtube")
     i.add_argument("--duracao", type=int, default=None); i.add_argument("--idioma", default="en"); i.add_argument("--estilo", default="")
     i.add_argument("--formato", default="16:9"); i.add_argument("--factual", action="store_true")
+    i.add_argument("--sem-estrategia", default=None, help="pula a porta do relatorio estrategico (SO com ordem do usuario; informe o motivo)")
     for n in ("storyboard", "check"):
         sub.add_parser(n).add_argument("slug")
     a = ap.parse_args()

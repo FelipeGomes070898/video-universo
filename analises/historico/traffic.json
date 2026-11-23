@@ -1,0 +1,51 @@
+[
+ {
+  "video_id": "manual:V1",
+  "ts": 1763424000,
+  "source": "YT_SUGGESTED",
+  "views": 6.0,
+  "minutes": null
+ },
+ {
+  "video_id": "manual:V1",
+  "ts": 1763424000,
+  "source": "YT_CHANNEL",
+  "views": 3.0,
+  "minutes": null
+ },
+ {
+  "video_id": "manual:V1",
+  "ts": 1763424000,
+  "source": "YT_SEARCH",
+  "views": 1.0,
+  "minutes": null
+ },
+ {
+  "video_id": "manual:V2",
+  "ts": 1763424000,
+  "source": "YT_CHANNEL",
+  "views": 1.0,
+  "minutes": null
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1763424000,
+  "source": "YT_SUGGESTED",
+  "views": 5.0,
+  "minutes": null
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1763424000,
+  "source": "YT_CHANNEL",
+  "views": 2.0,
+  "minutes": null
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1763424000,
+  "source": "NOTIFICATION",
+  "views": 1.0,
+  "minutes": null
+ }
+]

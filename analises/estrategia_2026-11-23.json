@@ -1,0 +1,194 @@
+{
+ "gerado_em": "2026-11-23",
+ "ultima_sincronizacao": null,
+ "n_videos": 3,
+ "n_com_amostra_suficiente": 0,
+ "limites": [
+  "3 de 3 videos com amostra insuficiente (<100 views e <1000 impressoes)",
+  "comparacoes por grupo so valem com n>=3 videos por grupo; abaixo disso sao apenas hipoteses",
+  "retencao/CTR podem demorar ~2 dias; 24 h e aproximado (granularidade diaria da API)"
+ ],
+ "respostas": [
+  {
+   "pergunta": "1. O que funcionou nos ultimos videos?",
+   "resposta": "Maior retencao media: Voyager 1 Just Reached One Light-Day From Earth —  (27.0%); We Traveled to the Edge of the Universe — and Hit  (18.5%)",
+   "evidencia": {
+    "ranking_ctr": [
+     [
+      "manual:V1",
+      "We Traveled to the Edge of the Universe — and Hit ",
+      0.0365
+     ],
+     [
+      "kAFBQHig-1o",
+      "Voyager 1 Just Reached One Light-Day From Earth — ",
+      0.014
+     ]
+    ],
+    "ranking_retencao_30s": [
+     [
+      "manual:V1",
+      "We Traveled to the Edge of the Universe — and Hit ",
+      0.4
+     ]
+    ]
+   },
+   "confianca": "baixa"
+  },
+  {
+   "pergunta": "2. O que nao funcionou?",
+   "resposta": "queda forte nos 30 s iniciais em 'We Traveled to the Edge of the Universe ' (retem 40.0%); 3 video(s) sem inscritos nem curtidas",
+   "evidencia": {
+    "menores_retencoes": [
+     [
+      "We Traveled to the Edge of the Universe ",
+      18.5
+     ],
+     [
+      "Voyager 1 Just Reached One Light-Day Fro",
+      27.0
+     ]
+    ]
+   },
+   "confianca": "baixa"
+  },
+  {
+   "pergunta": "3. Quais assuntos demonstraram maior potencial?",
+   "resposta": "NENHUM tema tem amostra suficiente (n>=3 videos). Recorrentes (hipoteses): wall",
+   "evidencia": {
+    "temas": [
+     [
+      "wall",
+      {
+       "n": 2,
+       "views": 13.0,
+       "subs_per_1k": 0.0,
+       "avg_view_pct": 18.5
+      }
+     ]
+    ]
+   },
+   "confianca": "insuficiente"
+  },
+  {
+   "pergunta": "4. Quais erros devem ser evitados?",
+   "resposta": "abertura fraca em 'We Traveled to the Edge of the Univ'",
+   "evidencia": {
+    "canibalizacao": []
+   },
+   "confianca": "baixa"
+  },
+  {
+   "pergunta": "5. Como melhorar a introducao?",
+   "resposta": "retencao media aos 30 s: 40.0%. Regra para o proximo video: primeiro evento visual real (foto/video/mapa) em ate 5 s, promessa concreta em ate 15 s, nenhuma explicacao de contexto antes da primeira pergunta; medir de novo aos 30 s.",
+   "evidencia": {
+    "retention_30s": {
+     "We Traveled to the Edge of the": 0.4,
+     "THE WALL": null,
+     "Voyager 1 Just Reached One Lig": null
+    }
+   },
+   "confianca": "baixa"
+  },
+  {
+   "pergunta": "6. Qual abordagem narrativa pode aumentar a retencao?",
+   "resposta": "Estrutura pergunta -> promessa -> descoberta -> nova pergunta (mapa de curiosidade), com 'ponto de virada' a cada ~60-75 s; trechos de explicacao no maximo 45 s sem evento visual. Validar comparando a curva de retencao por capitulo contra o roteiro (retention.map_drops).",
+   "evidencia": {
+    "base": "curiosity_chain.json + lint de 30 s do build"
+   },
+   "confianca": "baixa"
+  },
+  {
+   "pergunta": "7. Qual duracao e adequada ao tema e ao historico?",
+   "resposta": "sem 2 videos por faixa de duracao: nao ha base para otimizar. Experimento: alternar 8-12 min e 12-16 min e comparar retencao media (avg_view_pct) e tempo de exibicao.",
+   "evidencia": {
+    "duracao_vs_retencao": {
+     "8-12 min": {
+      "n": 1,
+      "mean": 18.5
+     },
+     ">=16 min": {
+      "n": 1,
+      "mean": 27.0
+     }
+    }
+   },
+   "confianca": "insuficiente"
+  },
+  {
+   "pergunta": "8. Que estilo visual e de thumbnail merece ser testado?",
+   "resposta": "menos de 2 videos com >= 1000 impressoes: nao da para dizer que uma miniatura e melhor. Plano: teste A/B do Studio com 2-3 miniaturas mudando UMA variavel por vez (texto, cor ou elemento principal), mesma historia/titulo, ate ~1000 impressoes por variante.",
+   "evidencia": {
+    "ctr": {
+     "We Traveled to the Edge of the": [
+      0.0365,
+      165.0
+     ],
+     "THE WALL": [
+      0.0,
+      12.0
+     ],
+     "Voyager 1 Just Reached One Lig": [
+      0.014,
+      208.0
+     ]
+    }
+   },
+   "confianca": "insuficiente"
+  },
+  {
+   "pergunta": "9. Quais mudancas podem aumentar o tempo de exibicao?",
+   "resposta": "Cortar/encurtar os trechos onde a curva cai (ver quedas por cena em 'channel.py retention'); evitar introducao com contexto; manter evento visual a cada <= 30 s; capitulos com promessa clara. Duracao media atual: We Traveled to the Edge of the: 132s (18%), THE WALL: 3s (n/d), Voyager 1 Just Reached One Lig: 282s (27%).",
+   "evidencia": {
+    "avg_view": [
+     [
+      "We Traveled to the Edge of the",
+      132.0,
+      18.5
+     ],
+     [
+      "THE WALL",
+      3.0,
+      null
+     ],
+     [
+      "Voyager 1 Just Reached One Lig",
+      282.0,
+      27.0
+     ]
+    ]
+   },
+   "confianca": "baixa"
+  },
+  {
+   "pergunta": "10. Quais oportunidades existem para conquistar novos inscritos?",
+   "resposta": "inscritos/1000 views: We Traveled to the Edge of the 0.0, THE WALL 0.0. fontes de trafego principais: YT_SUGGESTED (11 views), YT_CHANNEL (6 views), YT_SEARCH (1 views). Acao: pedir a inscricao no PICO de interesse (apos a maior descoberta), nao so no fim; fixar comentario com pergunta.",
+   "evidencia": {
+    "trafego": {
+     "YT_SUGGESTED": {
+      "views": 11.0,
+      "minutes": 0.0
+     },
+     "YT_CHANNEL": {
+      "views": 6.0,
+      "minutes": 0.0
+     },
+     "YT_SEARCH": {
+      "views": 1.0,
+      "minutes": 0.0
+     }
+    },
+    "evergreen": []
+   },
+   "confianca": "baixa"
+  }
+ ],
+ "estrategia_proximo_video": {
+  "tema": "decisao do usuario com base nos 'temas' acima; evitar repetir tema/titulo de video publicado ha <= 7 dias",
+  "duracao": "faixa conforme a pergunta 7 (experimento se insuficiente)",
+  "introducao": "primeiro evento visual real <= 5 s; promessa <= 15 s; sem contexto antes da 1a pergunta",
+  "titulo": "especifico e concreto (numero/pergunta/objeto), sem promessa falsa; 1 variavel por teste",
+  "thumbnail": "teste A/B de 2-3 variantes, 1 variavel por vez; texto <= 3 palavras; completar o titulo (nao repetir)",
+  "medicao": "registrar no banco (channel.py register) e medir em 24 h (dias 0-1), 7 dias e 28 dias; comparar com o video anterior por retencao 30 s, avg_view_pct, CTR (com IC) e inscritos/1000 views"
+ }
+}
