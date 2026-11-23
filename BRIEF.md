@@ -57,3 +57,10 @@ Objetivo: ciclo contínuo **analisar canal → oportunidades → planejar → ro
 - **Banco de aprendizado** (`productions`): tema, roteiro, título, thumbnail, duração, estratégia, desempenho, positivos, problemas, recomendações (`channel.py register`, `history`, `compare`).
 - **Limites**: Analytics é diário (24 h ≈ dias 0–1); retenção/CTR levam até ~2 dias; demografia/geografia exigem volume mínimo.
 - **Linha de base atual**: sem acesso à API ainda; `channel.py seed-manual` carrega os 3 vídeos dos prints do Studio de 18/11 (`pipeline/channel/fixtures/`, fonte marcada `manual_studio_prints`). Relatório: `analises/estrategia_2026-11-23.md` (confiança baixa/insuficiente por amostra mínima).
+
+## Atualizações da produção "Cassini" (2026-11-23)
+- Vídeo `cassini_final_dive`: 10:10, 1080p, 24 fps, voz `am_onyx` (sage 0.923), música com `--music-vol 0.12` (voz ~13 dB acima da música no QC; antes 0.36 = ~4 dB). `build_film.py --music-vol` e o QC agora leem o volume real (`audio_meta.json`). Para só refazer o áudio sem re-renderizar: apagar o MP4 final e rodar `build_film.py ... --music-vol X` e `render_film.py` de novo (reusa os blocos e remonta).
+- Lint de retenção (`build_film.py`) agora conta troca de foto/vídeo como evento visual.
+- `models.py`: modelo 3D `cassini_hq` (simulação rotulada). `sc()` das cenas converte índices de LINHA em índices de FRASE (linhas com 2 frases deslocavam fotos/legendas): usar o `sc()`/`_remap` do projeto cassini_final_dive em novos scenes.py.
+- Mídia: 44 itens NASA (fotos PIA*/NHQ*, vídeo de animação GSFC da tempestade e KSC do Huygens); ~78% do tempo com foto/vídeo real em tela cheia; ilustrações oficiais com "(illustration)". Thumbnails: `make_thumb.py --base <png 1920x1080 recortado da foto>`; estilo `bold`; teste A/B só muda a imagem.
+- Limites: acervo NASA tem poucos vídeos longos em alta resolução (o Huygens em 320×212 só entra em moldura); Wikimedia Commons segue bloqueado por script.

@@ -19,13 +19,18 @@ NÃO TESTADO: OAuth local (`connect/refresh/disconnect`), download da miniatura 
 
 NOTA: a partir desta sessão o código novo (`pipeline/channel/`, `channel.py`, porta de estratégia no `produce.py`) existe SÓ no video-universo; o `pipeline/` aqui passa a ser a fonte da verdade (o ARCHIVE-STUDIO-AI não tem essas mudanças).
 
+## Produção Cassini (2026-11-23) — pronta, NÃO publicada
+- Vídeo `cassini_final_dive` (Why NASA Flew Its Own Spacecraft Into Saturn), 10:10, entregue em `entregas/cassini_final_dive/` do ARCHIVE-STUDIO-AI (branch `ccr-1871013c-o689be`, partes de 95 MB + SHA256 conferido) e textos em `entregas/cassini_final_dive/` aqui (roteiro, publicacao, credits, captions). Dossiê (18 fatos com fonte) em `projects/cassini_final_dive/dossier.json` no ARCHIVE-STUDIO-AI. QC: sem FAIL; restam WARN "cena sem corte 61 s (launch)" e MANUAL "voz humana (ouvir)". Registrado em `productions` (sem video_id até publicar).
+- Gerado com base em `analises/estrategia_2026-11-23.md` (gancho com mídia real, sem CTA em 30 s, CTA único no pico).
+
 ## PENDENTE
 - [x] Copiar o pipeline (scripts de render, narração, thumbnail, QC, upload) do repositório ARCHIVE-STUDIO-AI para `pipeline/` aqui. FEITO (49 arquivos; sem tokens; inclui `pipeline/tools/youtube_upload.sh`).
 - [x] Copiar roteiro, publicacao.md, credits.txt e captions.srt de `entregas/um_ano_luz_v2/` para `entregas/`. FEITO (só texto: roteiro.md, publicacao.md, credits.txt, captions.srt; sem MP4/áudio/imagens, que seguem no ARCHIVE-STUDIO-AI e no YouTube).
-- [ ] Corrigir QC: voz 12 dB acima da música; lacuna de 80 s no mapa de curiosidade.
+- [x] QC voz 12 dB acima da música: resolvido no Cassini (--music-vol 0.12 = 13 dB). Para a v2 do um_ano_luz ainda vale refazer o áudio. [x] Lacuna do mapa de curiosidade: resolvida no Cassini (loops cobrindo a linha do tempo); v2 do um_ano_luz ainda tem 80 s.
 - [ ] A cada análise: autorizar de novo (token ~1 h; nuvem: `request_credential` para `www.googleapis.com` E `youtubeanalytics.googleapis.com`, escopos youtube.readonly + yt-analytics.readonly), `channel.py sync`, `channel.py strategy`. Vídeos com id começando por `-` precisam de `--` antes do id em `channel.py retention`.
 - [ ] Após ~48 h de cada vídeo: `sync` + `retention <video_id> <slug>`; depois 7 d e 28 d; registrar com `channel.py register` e `compare`.
 - [ ] Implementar busca/recorte de vídeos do YouTube só com licença CC BY (YouTube Data API `videoLicense=creativeCommon`) com registro de origem para os créditos. NÃO existe no pipeline.
+- [ ] Usuário: publicar o Cassini (título, descrição, tags, thumbnails A/B, `captions.srt`, comentário fixado com `credits.txt`); depois `channel.py register cassini_final_dive --video-id <id>` e medir em 24 h/7 d/28 d. Escolher a thumbnail A (Saturno) ou B (rosto) no teste A/B do Studio.
 - [ ] Usuário: publicar a v2, fixar comentário de créditos, subir captions.srt.
 
 ## Notas do pipeline copiado

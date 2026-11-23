@@ -195,7 +195,20 @@ def _frag(col):
     return {"boxes": [((0, 0, 0), (1.3, 0.9, 0.5), col), ((0, 0, 0.27), (0.9, 0.5, 0.06), (1.0, 0.9, 0.6))]}
 
 
-MODELS = {"starship": _starship(), "starship_legs": _starship_legs(), "base": _base(), "rover": _rover(), "astronaut": _astronaut(), "mav": _mav(), "probe": _probe(), "voyager_hq": _voyager_hq(), "titan3e": _titan3e(), "memchip": _memchip(),
+def _cassini_hq():
+    """Cassini orbiter (+ Huygens): antena de 4 m (frustos brancos), corpo com manta dourada, Huygens na lateral, boom do magnetometro, antenas RPWS, 3 RTGs, pacote de instrumentos. Eixo da antena = +z. Ilustracao/simulacao (nao e foto)."""
+    WH, GOLD, GR, DK = (0.92, 0.92, 0.94), (0.66, 0.52, 0.28), (0.62, 0.62, 0.66), (0.20, 0.20, 0.23)
+    cy = [((0, 0, 3.0), "z", 0.35, 1.2, 0.5, WH, 24), ((0, 0, 3.4), "z", 1.2, 2.0, 0.35, (0.88, 0.88, 0.9), 24),
+          ((0, 0, 0.6), "z", 1.15, 1.15, 3.4, GOLD, 16), ((0, 0, -1.6), "z", 1.0, 1.0, 1.0, (0.55, 0.45, 0.25), 16),
+          ((2.05, 0, 0.4), "z", 0.9, 0.9, 1.6, (0.55, 0.5, 0.42), 20), ((-0.5, -1.15, -1.2), "z", 0.28, 0.28, 1.5, DK, 10),
+          ((0.5, -1.15, -1.2), "z", 0.28, 0.28, 1.5, DK, 10), ((0.0, -1.35, -1.2), "z", 0.28, 0.28, 1.5, DK, 10)]
+    bx = [((-5.0, 0.4, 0.0), (9.6, 0.1, 0.1), GR), ((0.0, 1.35, -0.9), (4.2, 0.06, 0.06), (0.75, 0.75, 0.8)), ((0.0, 1.35, -0.9), (0.06, 0.06, 4.0), (0.75, 0.75, 0.8)),
+          ((-1.1, 0.55, -0.2), (0.9, 0.5, 0.9), GR), ((1.5, -0.5, -1.0), (0.6, 0.6, 0.8), GR)]
+    ds = [((0, 0, 3.58), (0, 0, 1), 1.98, (0.62, 0.62, 0.66)), ((0, 0, 2.8), (0, 0, 1), 0.34, (0.3, 0.3, 0.34))]
+    return {"cyls": cy, "boxes": bx, "discs": ds}
+
+
+MODELS = {"starship": _starship(), "starship_legs": _starship_legs(), "base": _base(), "rover": _rover(), "astronaut": _astronaut(), "mav": _mav(), "probe": _probe(), "voyager_hq": _voyager_hq(), "cassini_hq": _cassini_hq(), "titan3e": _titan3e(), "memchip": _memchip(),
           "frag_a": _frag((0.95, 0.65, 0.15)), "frag_b": _frag((0.2, 0.7, 0.95)), "frag_c": _frag((0.5, 0.9, 0.4))}
 try:
     from .models_ext import build as _build_ext

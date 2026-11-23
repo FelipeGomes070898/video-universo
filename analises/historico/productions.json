@@ -46,5 +46,21 @@
   "recommendations": null,
   "created_ts": 1795430917,
   "updated_ts": 1795430917
+ },
+ {
+  "slug": "cassini_final_dive",
+  "video_id": null,
+  "theme": "missao Cassini / Saturno / Encelado",
+  "script_path": "cassini_final_dive",
+  "title": "Why NASA Flew Its Own Spacecraft Into Saturn",
+  "thumbnail_path": null,
+  "duration_s": 610.0,
+  "strategy": "{\"baseado_em\":\"analises/estrategia_2026-11-23.md\",\"gancho\":\"midia real aos 0 s, sem pergunta/CTA ate 30 s\",\"cta\":\"unico, apos o fim do sinal (pico)\",\"duracao\":\"10:10 (experimento 8-12 min)\",\"thumbnail\":\"teste A/B: mesma frase ON PURPOSE, muda so a imagem (Saturno x rosto humano)\",\"medicao\":\"24 h, 7 d, 28 d\"}",
+  "published_at": null,
+  "positives": null,
+  "problems": "simulacoes 3D simples; poucos videos reais de alta resolucao no acervo (so 2 usados, animacao); cena launch 61 s sem corte (mas com troca de foto a cada ~10 s)",
+  "recommendations": "se a retencao 30 s melhorar vs V1 (36,8%), manter gancho com midia real; comparar CTR A x B com >= 1000 impressoes",
+  "created_ts": 1795439470,
+  "updated_ts": 1795439470
  }
 ]

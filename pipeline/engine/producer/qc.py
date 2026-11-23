@@ -76,7 +76,11 @@ def run(proj, pdir, dossier=None, publication=None, formato=None):
             ma = np.array([np.sqrt(np.mean(m[int(i * 1840):int((i + 1) * 1840)] ** 2)) for i in range(n)])
             ms = ma[: min(len(speech), len(ma))][speech[: min(len(speech), len(ma))]]
             vs = va[: len(ms)] if False else va[speech][: len(ms)]
-            db = 20 * np.log10(np.mean(vs) / (np.mean(ms) * 0.36 + 1e-9) + 1e-9)
+            try:
+                mv = float(json.load(open(os.path.join(out_dir, "audio_meta.json"))).get("music_vol", 0.36))
+            except Exception:
+                mv = 0.36
+            db = 20 * np.log10(np.mean(vs) / (np.mean(ms) * mv + 1e-9) + 1e-9)
             add("Audio: voz acima da musica (antes do ducking)", "PASS" if db > 12 else "WARN", f"voz ~{db:.0f} dB acima da musica (min 12 dB; ducking adicional aplicado)")
     else:
         add("Audio", "WARN", "audio_mix.wav ausente")
