@@ -1,1 +1,23 @@
-[]
+[
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430876,
+  "what": "impressoes_ctr",
+  "status": "indisponivel_na_api",
+  "note": "HTTP 400 query not supported; valor vem dos prints do Studio (manual_studio_prints)"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430876,
+  "what": "impressoes_ctr",
+  "status": "indisponivel_na_api",
+  "note": "HTTP 400 query not supported; valor vem dos prints do Studio (manual_studio_prints)"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430876,
+  "what": "impressoes_ctr",
+  "status": "indisponivel_na_api",
+  "note": "HTTP 400 query not supported; valor vem dos prints do Studio (manual_studio_prints)"
+ }
+]

@@ -14,7 +14,8 @@
 
 ## Sessão 2026-11-23 — integração com o canal (somente leitura)
 CONCLUÍDO E TESTADO (offline): `pipeline/channel/` + `pipeline/channel.py`; `python channel.py selftest` = 22 verificações OK (GET-only, hosts permitidos, token fora do git, métrica indisponível não inventada, janelas 24 h/7 d/28 d, IC de CTR, retenção × roteiro, export/import, porta da estratégia). Thumbs testado em 1 imagem local. `produce.py init` agora exige relatório estratégico (testado: bloqueia sem relatório, libera com, `--sem-estrategia` pula). Banco semente + `analises/estrategia_2026-11-23.md` + `analises/historico/` gerados.
-NÃO TESTADO (sem token/rede com o Google nesta sessão): OAuth local (`connect/refresh/disconnect`), chamadas reais às APIs, download da miniatura publicada, nomes/semântica das métricas de impressões/CTR no Analytics, Reporting API (não implementada).
+PRIMEIRO USO REAL (2026-11-23, modo nuvem com token somente leitura): canal WhyExplained (5 inscritos, 3 vídeos) sincronizado. Funcionou: Data API, views, tempo de exibição, % média vista, inscritos, séries diárias → d1/d7/d28, fontes de tráfego, curva de retenção do V1 (-DuVk_uUt8U). Não veio: curva de retenção do V3 e do V2 (volume), país/idade/gênero (volume mínimo), impressões e CTR (HTTP 400 "query not supported" → só pelos prints do Studio). Achado: V1 perde 70 p.p. da audiência até 21 s (cena hook, frase do pedido de comentário; base ~10 views = ruído alto). Vídeos registrados em `productions` (the_wall, the_wall_hd, voyager_one).
+NÃO TESTADO: OAuth local (`connect/refresh/disconnect`), download da miniatura publicada, Reporting API (não implementada).
 
 NOTA: a partir desta sessão o código novo (`pipeline/channel/`, `channel.py`, porta de estratégia no `produce.py`) existe SÓ no video-universo; o `pipeline/` aqui passa a ser a fonte da verdade (o ARCHIVE-STUDIO-AI não tem essas mudanças).
 
@@ -22,7 +23,7 @@ NOTA: a partir desta sessão o código novo (`pipeline/channel/`, `channel.py`, 
 - [x] Copiar o pipeline (scripts de render, narração, thumbnail, QC, upload) do repositório ARCHIVE-STUDIO-AI para `pipeline/` aqui. FEITO (49 arquivos; sem tokens; inclui `pipeline/tools/youtube_upload.sh`).
 - [x] Copiar roteiro, publicacao.md, credits.txt e captions.srt de `entregas/um_ano_luz_v2/` para `entregas/`. FEITO (só texto: roteiro.md, publicacao.md, credits.txt, captions.srt; sem MP4/áudio/imagens, que seguem no ARCHIVE-STUDIO-AI e no YouTube).
 - [ ] Corrigir QC: voz 12 dB acima da música; lacuna de 80 s no mapa de curiosidade.
-- [ ] PRIMEIRO USO REAL: autorizar (local: `channel.py connect`; nuvem: `request_credential` host www.googleapis.com com escopos youtube.readonly + yt-analytics.readonly), rodar `channel.py sync`, conferir `availability` (o que a API recusou), ajustar nomes de métricas e rodar `channel.py strategy`.
+- [ ] A cada análise: autorizar de novo (token ~1 h; nuvem: `request_credential` para `www.googleapis.com` E `youtubeanalytics.googleapis.com`, escopos youtube.readonly + yt-analytics.readonly), `channel.py sync`, `channel.py strategy`. Vídeos com id começando por `-` precisam de `--` antes do id em `channel.py retention`.
 - [ ] Após ~48 h de cada vídeo: `sync` + `retention <video_id> <slug>`; depois 7 d e 28 d; registrar com `channel.py register` e `compare`.
 - [ ] Implementar busca/recorte de vídeos do YouTube só com licença CC BY (YouTube Data API `videoLicense=creativeCommon`) com registro de origem para os créditos. NÃO existe no pipeline.
 - [ ] Usuário: publicar a v2, fixar comentário de créditos, subir captions.srt.

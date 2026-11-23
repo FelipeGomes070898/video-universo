@@ -1,1 +1,50 @@
-[]
+[
+ {
+  "slug": "the_wall",
+  "video_id": "-DuVk_uUt8U",
+  "theme": "escala do universo",
+  "script_path": "the_wall",
+  "title": "We Traveled to the Edge of the Universe — and Hit a Wall",
+  "thumbnail_path": null,
+  "duration_s": 695.0,
+  "strategy": null,
+  "published_at": null,
+  "positives": null,
+  "problems": null,
+  "recommendations": null,
+  "created_ts": 1795430917,
+  "updated_ts": 1795430917
+ },
+ {
+  "slug": "the_wall_hd",
+  "video_id": "fchanr_H4VU",
+  "theme": "escala do universo",
+  "script_path": "the_wall_hd",
+  "title": "THE WALL (versao HD)",
+  "thumbnail_path": null,
+  "duration_s": 886.0,
+  "strategy": null,
+  "published_at": null,
+  "positives": null,
+  "problems": null,
+  "recommendations": null,
+  "created_ts": 1795430917,
+  "updated_ts": 1795430917
+ },
+ {
+  "slug": "voyager_one",
+  "video_id": "kAFBQHig-1o",
+  "theme": "Voyager 1",
+  "script_path": "voyager_one",
+  "title": "Voyager 1 Just Reached One Light-Day From Earth",
+  "thumbnail_path": null,
+  "duration_s": 1023.0,
+  "strategy": null,
+  "published_at": null,
+  "positives": null,
+  "problems": null,
+  "recommendations": null,
+  "created_ts": 1795430917,
+  "updated_ts": 1795430917
+ }
+]

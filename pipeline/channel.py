@@ -80,9 +80,9 @@ def main():
             for pth in sorted(__import__("glob").glob(os.path.join(a.dir, "*", "thumbnail.jpg"))):
                 f = thumbs.features(pth); print(pth, f, "|", thumbs.describe(f))
     elif a.cmd == "retention":
-        base = os.path.join(os.path.dirname(HERE), "projects", a.slug)
+        base = a.slug if os.path.isdir(a.slug) else os.path.join(os.path.dirname(HERE), "projects", a.slug)      # slug ou caminho da pasta do projeto
         pj = os.path.join(base, "project.json")
-        srt = next((q for q in (os.path.join(base, "output", "captions.srt"), os.path.join(os.path.dirname(HERE), "entregas", a.slug, "captions.srt")) if os.path.exists(q)), None)
+        srt = next((q for q in (os.path.join(base, "output", "captions.srt"), os.path.join(os.path.dirname(HERE), "entregas", os.path.basename(a.slug.rstrip("/")), "captions.srt")) if os.path.exists(q)), None)
         if not (os.path.exists(pj) and srt):
             sys.exit(f"precisa de {pj} e captions.srt do projeto")
         tl, sr = retention.timeline(pj), retention.parse_srt(srt)

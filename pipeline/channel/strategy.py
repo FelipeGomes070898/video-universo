@@ -6,6 +6,38 @@ import datetime as dt, glob, json, os, re, time
 from . import analyze as an
 
 MAX_AGE_DAYS = 14
+PROJECT_ROOTS = [os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "projects")] + [x for x in os.environ.get("VU_PROJECT_ROOTS", "").split(os.pathsep) if x] + \
+    [os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))), "ARCHIVE-STUDIO-AI", "space-video-engine", "projects")]
+
+
+def find_project(slug):
+    for r in PROJECT_ROOTS:
+        d = os.path.join(r, slug or "")
+        if slug and os.path.exists(os.path.join(d, "project.json")):
+            srt = os.path.join(d, "output", "captions.srt")
+            return d, (srt if os.path.exists(srt) else None)
+    return None, None
+
+
+def findings(st, T):
+    """Achados por video: maiores quedas da retencao (com cena/frase quando o projeto e conhecido) + diagnostico do roteiro."""
+    from . import retention
+    out = []
+    prod = {r["video_id"]: r for r in st.q("SELECT * FROM productions WHERE video_id IS NOT NULL")}
+    for t in T:
+        rows = st.latest_rows("retention", t["video_id"])
+        f = dict(video_id=t["video_id"], title=t["title"], views=t["views"], n_pontos_retencao=len(rows), quedas=[], roteiro=[])
+        pdir, srt = find_project((prod.get(t["video_id"]) or {}).get("script_path"))
+        tl = retention.timeline(os.path.join(pdir, "project.json")) if pdir else None
+        sr = retention.parse_srt(srt) if srt else []
+        if rows and t["duration_s"]:
+            d = an.drops(rows, t["duration_s"], top=3)
+            f["quedas"] = retention.map_drops(d, tl, sr) if tl else d
+        if tl:
+            f["roteiro"] = retention.script_diagnostics(tl, sr)
+        f["aviso"] = (f"curva baseada em ~{int(t['views'])} visualizacoes: cada espectador pesa ~{100 / max(t['views'], 1):.0f} p.p. (ruido alto)" if t["views"] else "")
+        out.append(f)
+    return out
 
 
 def _pct(x):
@@ -118,14 +150,20 @@ def build(st, thumb_feats=None, today=None):
         + "Acao: pedir a inscricao no PICO de interesse (apos a maior descoberta), nao so no fim; fixar comentario com pergunta.",
         dict(trafego=dict(tr), evergreen=A.get("evergreen")), "baixa" if sp else "insuficiente")
 
+    F = findings(st, T)
     plan = dict(
         tema="decisao do usuario com base nos 'temas' acima; evitar repetir tema/titulo de video publicado ha <= 7 dias",
         duracao="faixa conforme a pergunta 7 (experimento se insuficiente)",
         introducao="primeiro evento visual real <= 5 s; promessa <= 15 s; sem contexto antes da 1a pergunta",
         titulo="especifico e concreto (numero/pergunta/objeto), sem promessa falsa; 1 variavel por teste", thumbnail="teste A/B de 2-3 variantes, 1 variavel por vez; texto <= 3 palavras; completar o titulo (nao repetir)",
         medicao="registrar no banco (channel.py register) e medir em 24 h (dias 0-1), 7 dias e 28 dias; comparar com o video anterior por retencao 30 s, avg_view_pct, CTR (com IC) e inscritos/1000 views")
+    early = [(f, q) for f in F for q in f["quedas"] if q["ratio"] < 0.10 and abs(q["delta"]) >= 0.30]
+    for f, q in early:
+        plan["introducao"] += (f" | DADO REAL: '{f['title'][:40]}' perdeu {abs(q['delta']) * 100:.0f} p.p. da audiencia ate {q['sec']:.0f} s"
+                               + (f" (cena {q['scene']}, frase \"{(q['sentence'] or '')[:60]}...\", ultimo evento visual ha {q['seconds_since_last_event']} s)" if q.get("scene") else "")
+                               + f", com so ~{f['views']:.0f} views (ruido alto, mas e a unica evidencia): nao pedir comentario/CTA nem fazer pergunta ao publico nos primeiros 30 s; abrir com imagem real e a promessa")
     rep = dict(gerado_em=today.isoformat(), ultima_sincronizacao=dt.datetime.fromtimestamp(last).isoformat() if last else None, n_videos=n,
-               n_com_amostra_suficiente=len(ok_conf), limites=A.get("limites", []), respostas=ans, estrategia_proximo_video=plan)
+               n_com_amostra_suficiente=len(ok_conf), limites=A.get("limites", []), achados_por_video=F, respostas=ans, estrategia_proximo_video=plan)
     return rep
 
 
@@ -140,6 +178,19 @@ def to_markdown(rep):
     L.append("")
     for a in rep["respostas"]:
         L += [f"## {a['pergunta']}  _(confianca: {a['confianca']})_", "", a["resposta"], ""]
+    L += ["## Achados por video (dados reais)", ""]
+    for f in rep.get("achados_por_video", []):
+        L.append(f"### {f['title'][:70]} ({f['views']:.0f} views)")
+        if f["aviso"]:
+            L.append(f"_{f['aviso']}_")
+        for q in f["quedas"]:
+            where = f" | cena `{q['scene']}` | frase: \"{(q['sentence'] or '')[:80]}\" | ultimo evento visual ha {q['seconds_since_last_event']} s" if "scene" in q else ""
+            L.append(f"- queda de {abs(q['delta']) * 100:.0f} p.p. em {q['sec']:.0f} s{where}")
+        for d in f["roteiro"]:
+            L.append(f"- roteiro: {d}")
+        if not f["quedas"] and not f["roteiro"]:
+            L.append("- sem curva de retencao processada e sem projeto associado (registre com `channel.py register`)")
+        L.append("")
     L += ["## Estrategia especifica para o proximo video", ""] + [f"- **{k}**: {v}" for k, v in rep["estrategia_proximo_video"].items()] + [""]
     L.append("_Nada aqui e conclusao estatistica quando a confianca for baixa/insuficiente: sao hipoteses a testar._")
     return "\n".join(L) + "\n"

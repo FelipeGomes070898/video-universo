@@ -1,9 +1,702 @@
 [
  {
-  "video_id": "manual:V1",
-  "ts": 1763424000,
-  "ratio": 0.043,
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.01,
+  "watch_ratio": 1.1,
+  "relative": 0.42075
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.02,
+  "watch_ratio": 0.6,
+  "relative": 0.3496
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.03,
   "watch_ratio": 0.4,
-  "relative": null
+  "relative": 0.28795000000000004
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.04,
+  "watch_ratio": 0.4,
+  "relative": 0.25685
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.05,
+  "watch_ratio": 0.3,
+  "relative": 0.24505
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.06,
+  "watch_ratio": 0.4,
+  "relative": 0.243
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.07,
+  "watch_ratio": 0.4,
+  "relative": 0.2435
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.08,
+  "watch_ratio": 0.3,
+  "relative": 0.244
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.09,
+  "watch_ratio": 0.4,
+  "relative": 0.24969999999999998
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.1,
+  "watch_ratio": 0.4,
+  "relative": 0.26125
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.11,
+  "watch_ratio": 0.3,
+  "relative": 0.2753
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.12,
+  "watch_ratio": 0.4,
+  "relative": 0.28915
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.13,
+  "watch_ratio": 0.4,
+  "relative": 0.29975
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.14,
+  "watch_ratio": 0.3,
+  "relative": 0.3062
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.15,
+  "watch_ratio": 0.4,
+  "relative": 0.31120000000000003
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.16,
+  "watch_ratio": 0.4,
+  "relative": 0.31425000000000003
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.17,
+  "watch_ratio": 0.3,
+  "relative": 0.31335
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.18,
+  "watch_ratio": 0.4,
+  "relative": 0.3084
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.19,
+  "watch_ratio": 0.3,
+  "relative": 0.30115
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.2,
+  "watch_ratio": 0.3,
+  "relative": 0.2917
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.21,
+  "watch_ratio": 0.4,
+  "relative": 0.27690000000000003
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.22,
+  "watch_ratio": 0.4,
+  "relative": 0.25775
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.23,
+  "watch_ratio": 0.3,
+  "relative": 0.23714999999999997
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.24,
+  "watch_ratio": 0.3,
+  "relative": 0.21665
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.25,
+  "watch_ratio": 0.4,
+  "relative": 0.1972
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.26,
+  "watch_ratio": 0.2,
+  "relative": 0.17950000000000005
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.27,
+  "watch_ratio": 0.3,
+  "relative": 0.16354999999999997
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.28,
+  "watch_ratio": 0.3,
+  "relative": 0.14950000000000002
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.29,
+  "watch_ratio": 0.2,
+  "relative": 0.13774999999999998
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.3,
+  "watch_ratio": 0.3,
+  "relative": 0.12815
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.31,
+  "watch_ratio": 0.3,
+  "relative": 0.12060000000000004
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.32,
+  "watch_ratio": 0.2,
+  "relative": 0.11485000000000001
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.33,
+  "watch_ratio": 0.3,
+  "relative": 0.11054999999999998
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.34,
+  "watch_ratio": 0.3,
+  "relative": 0.10784999999999995
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.35,
+  "watch_ratio": 0.2,
+  "relative": 0.10685
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.36,
+  "watch_ratio": 0.3,
+  "relative": 0.10759999999999997
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.37,
+  "watch_ratio": 0.2,
+  "relative": 0.10999999999999999
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.38,
+  "watch_ratio": 0.2,
+  "relative": 0.1144
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.39,
+  "watch_ratio": 0.2,
+  "relative": 0.12119999999999997
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.4,
+  "watch_ratio": 0.2,
+  "relative": 0.13095
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.41,
+  "watch_ratio": 0.2,
+  "relative": 0.14425
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.42,
+  "watch_ratio": 0.2,
+  "relative": 0.16125
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.43,
+  "watch_ratio": 0.2,
+  "relative": 0.18175000000000002
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.44,
+  "watch_ratio": 0.2,
+  "relative": 0.2056
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.45,
+  "watch_ratio": 0.2,
+  "relative": 0.23260000000000003
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.46,
+  "watch_ratio": 0.2,
+  "relative": 0.26205
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.47,
+  "watch_ratio": 0.2,
+  "relative": 0.29269999999999996
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.48,
+  "watch_ratio": 0.2,
+  "relative": 0.32320000000000004
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.49,
+  "watch_ratio": 0.2,
+  "relative": 0.3523
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.5,
+  "watch_ratio": 0.2,
+  "relative": 0.3792
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.51,
+  "watch_ratio": 0.2,
+  "relative": 0.4036
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.52,
+  "watch_ratio": 0.2,
+  "relative": 0.42495
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.53,
+  "watch_ratio": 0.2,
+  "relative": 0.44225
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.54,
+  "watch_ratio": 0.2,
+  "relative": 0.4555
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.55,
+  "watch_ratio": 0.2,
+  "relative": 0.4657
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.56,
+  "watch_ratio": 0.2,
+  "relative": 0.47355
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.57,
+  "watch_ratio": 0.2,
+  "relative": 0.47925
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.58,
+  "watch_ratio": 0.2,
+  "relative": 0.4837
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.59,
+  "watch_ratio": 0.2,
+  "relative": 0.48785
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.6,
+  "watch_ratio": 0.2,
+  "relative": 0.49205
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.61,
+  "watch_ratio": 0.2,
+  "relative": 0.49595
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.62,
+  "watch_ratio": 0.2,
+  "relative": 0.4987
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.63,
+  "watch_ratio": 0.2,
+  "relative": 0.49985
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.64,
+  "watch_ratio": 0.2,
+  "relative": 0.5001
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.65,
+  "watch_ratio": 0.2,
+  "relative": 0.50015
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.66,
+  "watch_ratio": 0.2,
+  "relative": 0.5002
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.67,
+  "watch_ratio": 0.3,
+  "relative": 0.50025
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.68,
+  "watch_ratio": 0.2,
+  "relative": 0.5003
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.69,
+  "watch_ratio": 0.2,
+  "relative": 0.50035
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.7,
+  "watch_ratio": 0.2,
+  "relative": 0.50045
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.71,
+  "watch_ratio": 0.2,
+  "relative": 0.5005
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.72,
+  "watch_ratio": 0.2,
+  "relative": 0.50055
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.73,
+  "watch_ratio": 0.2,
+  "relative": 0.5006
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.74,
+  "watch_ratio": 0.2,
+  "relative": 0.5006
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.75,
+  "watch_ratio": 0.2,
+  "relative": 0.50055
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.76,
+  "watch_ratio": 0.3,
+  "relative": 0.5005
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.77,
+  "watch_ratio": 0.3,
+  "relative": 0.50035
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.78,
+  "watch_ratio": 0.3,
+  "relative": 0.4996
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.79,
+  "watch_ratio": 0.3,
+  "relative": 0.4962
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.8,
+  "watch_ratio": 0.2,
+  "relative": 0.48695
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.81,
+  "watch_ratio": 0.3,
+  "relative": 0.46835
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.82,
+  "watch_ratio": 0.2,
+  "relative": 0.4348
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.83,
+  "watch_ratio": 0.2,
+  "relative": 0.38455
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.84,
+  "watch_ratio": 0.3,
+  "relative": 0.32530000000000003
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.85,
+  "watch_ratio": 0.3,
+  "relative": 0.26735
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.86,
+  "watch_ratio": 0.2,
+  "relative": 0.21750000000000003
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.87,
+  "watch_ratio": 0.2,
+  "relative": 0.1779
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.88,
+  "watch_ratio": 0.3,
+  "relative": 0.14805000000000001
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.89,
+  "watch_ratio": 0.3,
+  "relative": 0.12664999999999998
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.9,
+  "watch_ratio": 0.3,
+  "relative": 0.11159999999999998
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.91,
+  "watch_ratio": 0.2,
+  "relative": 0.10149999999999998
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.92,
+  "watch_ratio": 0.2,
+  "relative": 0.09665000000000001
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.93,
+  "watch_ratio": 0.2,
+  "relative": 0.09545000000000003
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.94,
+  "watch_ratio": 0.2,
+  "relative": 0.0933
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.95,
+  "watch_ratio": 0.2,
+  "relative": 0.08960000000000001
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.96,
+  "watch_ratio": 0.2,
+  "relative": 0.08625
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.97,
+  "watch_ratio": 0.2,
+  "relative": 0.08365
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.98,
+  "watch_ratio": 0.2,
+  "relative": 0.08159999999999995
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 0.99,
+  "watch_ratio": 0.1,
+  "relative": 0.08000000000000002
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "ratio": 1.0,
+  "watch_ratio": 0.1,
+  "relative": 0.07899999999999996
  }
 ]

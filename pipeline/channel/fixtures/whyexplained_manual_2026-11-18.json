@@ -1,12 +1,12 @@
 {
  "_fonte": "20 prints do YouTube Studio enviados pelo usuario em 18/11/2026 (analises/whyexplained_metricas_2026-11-18.md). Amostra MUITO pequena. So o que estava nos prints; nada estimado alem das faixas indicadas em _notas.",
- "_notas": {"manual:V1": "duracao media informada como faixa 2:00-2:24 (usado o ponto medio 132 s) e 17-20 % (usado 18.5); CTR 3,6-3,7 % (usado 3.65 %)", "manual:V2": "so 12 impressoes", "manual:V3": "grafico de retencao ainda nao processado"},
+ "_notas": {"-DuVk_uUt8U": "duracao media informada como faixa 2:00-2:24 (usado o ponto medio 132 s) e 17-20 % (usado 18.5); CTR 3,6-3,7 % (usado 3.65 %)", "fchanr_H4VU": "so 12 impressoes", "manual:V3": "grafico de retencao ainda nao processado"},
  "videos": [
-  {"video_id": "manual:V1", "title": "We Traveled to the Edge of the Universe — and Hit a Wall", "published_at": "2026-11-16T12:00:00Z", "duration_s": 695,
+  {"video_id": "-DuVk_uUt8U", "title": "We Traveled to the Edge of the Universe — and Hit a Wall", "published_at": "2026-11-16T12:00:00Z", "duration_s": 695,
    "metrics": {"views": 12, "impressions": 165, "ctr": 0.0365, "averageViewDuration": 132, "averageViewPercentage": 18.5, "estimatedMinutesWatched": 24, "subscribersGained": 0, "likes": 0, "comments": 0},
    "retention": [[0.043, 0.40]],
    "traffic": [["YT_SUGGESTED", 6, null], ["YT_CHANNEL", 3, null], ["YT_SEARCH", 1, null]]},
-  {"video_id": "manual:V2", "title": "THE WALL", "published_at": "2026-11-17T12:00:00Z", "duration_s": 886,
+  {"video_id": "fchanr_H4VU", "title": "THE WALL", "published_at": "2026-11-17T12:00:00Z", "duration_s": 886,
    "metrics": {"views": 1, "impressions": 12, "ctr": 0.0, "averageViewDuration": 3, "estimatedMinutesWatched": 0, "subscribersGained": 0, "likes": 0, "comments": 0},
    "retention": [], "traffic": [["YT_CHANNEL", 1, null]]},
   {"video_id": "kAFBQHig-1o", "title": "Voyager 1 Just Reached One Light-Day From Earth — How It Survived 49 Years", "published_at": "2026-11-18T11:30:00Z", "duration_s": 1023,

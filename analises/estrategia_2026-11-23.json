@@ -1,6 +1,6 @@
 {
  "gerado_em": "2026-11-23",
- "ultima_sincronizacao": null,
+ "ultima_sincronizacao": "2026-11-23T10:47:31",
  "n_videos": 3,
  "n_com_amostra_suficiente": 0,
  "limites": [
@@ -8,14 +8,99 @@
   "comparacoes por grupo so valem com n>=3 videos por grupo; abaixo disso sao apenas hipoteses",
   "retencao/CTR podem demorar ~2 dias; 24 h e aproximado (granularidade diaria da API)"
  ],
+ "achados_por_video": [
+  {
+   "video_id": "-DuVk_uUt8U",
+   "title": "We Traveled to the Edge of the Universe — and Hit a Wall",
+   "views": 10.0,
+   "n_pontos_retencao": 100,
+   "quedas": [
+    {
+     "ratio": 0.03,
+     "sec": 20.8,
+     "delta": -0.7,
+     "start": 1.1,
+     "end": 0.4,
+     "scene": "hook",
+     "sentence": "Tell me in the comments: what's the farthest thing you can see from Earth with the naked eye?",
+     "events_nearby": 0,
+     "seconds_since_last_event": 14.8
+    },
+    {
+     "ratio": 0.19,
+     "sec": 132.1,
+     "delta": -0.1,
+     "start": 0.4,
+     "end": 0.3,
+     "scene": "venus",
+     "sentence": "From here, the numbers start to race.",
+     "events_nearby": 0,
+     "seconds_since_last_event": 17.5
+    },
+    {
+     "ratio": 0.24,
+     "sec": 166.8,
+     "delta": -0.1,
+     "start": 0.4,
+     "end": 0.3,
+     "scene": "mercury",
+     "sentence": "And yet, inside craters at the poles that never see sunlight, there's water ice.",
+     "events_nearby": 1,
+     "seconds_since_last_event": 6.2
+    }
+   ],
+   "roteiro": [
+    "lacuna visual de 35 s sem evento (6-41 s)",
+    "lacuna visual de 31 s sem evento (607-638 s)",
+    "trechos repetidos (>=3x): the farthest thing; look at the; at the beam; to get here"
+   ],
+   "aviso": "curva baseada em ~10 visualizacoes: cada espectador pesa ~10 p.p. (ruido alto)"
+  },
+  {
+   "video_id": "fchanr_H4VU",
+   "title": "We Traveled to the Edge of the Universe — and Hit a Wall",
+   "views": 0.0,
+   "n_pontos_retencao": 0,
+   "quedas": [],
+   "roteiro": [
+    "lacuna visual de 48 s sem evento (7-54 s)",
+    "lacuna visual de 30 s sem evento (76-106 s)",
+    "lacuna visual de 44 s sem evento (115-159 s)",
+    "lacuna visual de 30 s sem evento (186-216 s)",
+    "lacuna visual de 32 s sem evento (216-248 s)",
+    "lacuna visual de 34 s sem evento (287-322 s)",
+    "lacuna visual de 33 s sem evento (322-354 s)",
+    "lacuna visual de 44 s sem evento (430-474 s)",
+    "lacuna visual de 41 s sem evento (582-624 s)",
+    "lacuna visual de 33 s sem evento (653-686 s)",
+    "lacuna visual de 34 s sem evento (791-825 s)",
+    "trechos repetidos (>=3x): the farthest thing; with the naked; the naked eye; look at the",
+    "cenas muito longas (>60 s): moon"
+   ],
+   "aviso": ""
+  },
+  {
+   "video_id": "kAFBQHig-1o",
+   "title": "Voyager 1 Just Reached One Light-Day From Earth — How It Survived 49 Years",
+   "views": 15.0,
+   "n_pontos_retencao": 0,
+   "quedas": [],
+   "roteiro": [
+    "lacuna visual de 38 s sem evento (462-501 s)",
+    "lacuna visual de 32 s sem evento (690-722 s)",
+    "trechos repetidos (>=3x): one light day; six billion kilometers; uranus and neptune; the solar system"
+   ],
+   "aviso": "curva baseada em ~15 visualizacoes: cada espectador pesa ~7 p.p. (ruido alto)"
+  }
+ ],
  "respostas": [
   {
    "pergunta": "1. O que funcionou nos ultimos videos?",
-   "resposta": "Maior retencao media: Voyager 1 Just Reached One Light-Day From Earth —  (27.0%); We Traveled to the Edge of the Universe — and Hit  (18.5%)",
+   "resposta": "Maior retencao media: Voyager 1 Just Reached One Light-Day From Earth —  (28.2%); We Traveled to the Edge of the Universe — and Hit  (20.8%)",
    "evidencia": {
     "ranking_ctr": [
      [
-      "manual:V1",
+      "-DuVk_uUt8U",
       "We Traveled to the Edge of the Universe — and Hit ",
       0.0365
      ],
@@ -27,9 +112,9 @@
     ],
     "ranking_retencao_30s": [
      [
-      "manual:V1",
+      "-DuVk_uUt8U",
       "We Traveled to the Edge of the Universe — and Hit ",
-      0.4
+      0.3683
      ]
     ]
    },
@@ -37,16 +122,16 @@
   },
   {
    "pergunta": "2. O que nao funcionou?",
-   "resposta": "queda forte nos 30 s iniciais em 'We Traveled to the Edge of the Universe ' (retem 40.0%); 3 video(s) sem inscritos nem curtidas",
+   "resposta": "queda forte nos 30 s iniciais em 'We Traveled to the Edge of the Universe ' (retem 36.8%); 2 video(s) sem inscritos nem curtidas",
    "evidencia": {
     "menores_retencoes": [
      [
       "We Traveled to the Edge of the Universe ",
-      18.5
+      0.0
      ],
      [
-      "Voyager 1 Just Reached One Light-Day Fro",
-      27.0
+      "We Traveled to the Edge of the Universe ",
+      20.76
      ]
     ]
    },
@@ -54,16 +139,16 @@
   },
   {
    "pergunta": "3. Quais assuntos demonstraram maior potencial?",
-   "resposta": "NENHUM tema tem amostra suficiente (n>=3 videos). Recorrentes (hipoteses): wall",
+   "resposta": "NENHUM tema tem amostra suficiente (n>=3 videos). Recorrentes (hipoteses): escala do universo",
    "evidencia": {
     "temas": [
      [
-      "wall",
+      "escala do universo",
       {
        "n": 2,
-       "views": 13.0,
+       "views": 10.0,
        "subs_per_1k": 0.0,
-       "avg_view_pct": 18.5
+       "avg_view_pct": 10.38
       }
      ]
     ]
@@ -72,19 +157,24 @@
   },
   {
    "pergunta": "4. Quais erros devem ser evitados?",
-   "resposta": "abertura fraca em 'We Traveled to the Edge of the Univ'",
+   "resposta": "canibalizacao: 'We Traveled to the Edge of the Univ' x 'We Traveled to the Edge of the Univ' publicados com 1 dia(s) de diferenca; abertura fraca em 'We Traveled to the Edge of the Univ'",
    "evidencia": {
-    "canibalizacao": []
+    "canibalizacao": [
+     [
+      "We Traveled to the Edge of the Universe — and Hit a Wall",
+      "We Traveled to the Edge of the Universe — and Hit a Wall",
+      1
+     ]
+    ]
    },
    "confianca": "baixa"
   },
   {
    "pergunta": "5. Como melhorar a introducao?",
-   "resposta": "retencao media aos 30 s: 40.0%. Regra para o proximo video: primeiro evento visual real (foto/video/mapa) em ate 5 s, promessa concreta em ate 15 s, nenhuma explicacao de contexto antes da primeira pergunta; medir de novo aos 30 s.",
+   "resposta": "retencao media aos 30 s: 36.8%. Regra para o proximo video: primeiro evento visual real (foto/video/mapa) em ate 5 s, promessa concreta em ate 15 s, nenhuma explicacao de contexto antes da primeira pergunta; medir de novo aos 30 s.",
    "evidencia": {
     "retention_30s": {
-     "We Traveled to the Edge of the": 0.4,
-     "THE WALL": null,
+     "We Traveled to the Edge of the": null,
      "Voyager 1 Just Reached One Lig": null
     }
    },
@@ -105,11 +195,15 @@
     "duracao_vs_retencao": {
      "8-12 min": {
       "n": 1,
-      "mean": 18.5
+      "mean": 20.76
+     },
+     "12-16 min": {
+      "n": 1,
+      "mean": 0.0
      },
      ">=16 min": {
       "n": 1,
-      "mean": 27.0
+      "mean": 28.16
      }
     }
    },
@@ -121,10 +215,6 @@
    "evidencia": {
     "ctr": {
      "We Traveled to the Edge of the": [
-      0.0365,
-      165.0
-     ],
-     "THE WALL": [
       0.0,
       12.0
      ],
@@ -138,23 +228,23 @@
   },
   {
    "pergunta": "9. Quais mudancas podem aumentar o tempo de exibicao?",
-   "resposta": "Cortar/encurtar os trechos onde a curva cai (ver quedas por cena em 'channel.py retention'); evitar introducao com contexto; manter evento visual a cada <= 30 s; capitulos com promessa clara. Duracao media atual: We Traveled to the Edge of the: 132s (18%), THE WALL: 3s (n/d), Voyager 1 Just Reached One Lig: 282s (27%).",
+   "resposta": "Cortar/encurtar os trechos onde a curva cai (ver quedas por cena em 'channel.py retention'); evitar introducao com contexto; manter evento visual a cada <= 30 s; capitulos com promessa clara. Duracao media atual: We Traveled to the Edge of the: 144s (21%), We Traveled to the Edge of the: 0s (0%), Voyager 1 Just Reached One Lig: 288s (28%).",
    "evidencia": {
     "avg_view": [
      [
       "We Traveled to the Edge of the",
-      132.0,
-      18.5
+      144.0,
+      20.76
      ],
      [
-      "THE WALL",
-      3.0,
-      null
+      "We Traveled to the Edge of the",
+      0.0,
+      0.0
      ],
      [
       "Voyager 1 Just Reached One Lig",
-      282.0,
-      27.0
+      288.0,
+      28.16
      ]
     ]
    },
@@ -162,18 +252,18 @@
   },
   {
    "pergunta": "10. Quais oportunidades existem para conquistar novos inscritos?",
-   "resposta": "inscritos/1000 views: We Traveled to the Edge of the 0.0, THE WALL 0.0. fontes de trafego principais: YT_SUGGESTED (11 views), YT_CHANNEL (6 views), YT_SEARCH (1 views). Acao: pedir a inscricao no PICO de interesse (apos a maior descoberta), nao so no fim; fixar comentario com pergunta.",
+   "resposta": "inscritos/1000 views: We Traveled to the Edge of the 0.0, Voyager 1 Just Reached One Lig 0.0. fontes de trafego principais: RELATED_VIDEO (11 views), SUBSCRIBER (10 views), NO_LINK_OTHER (1 views). Acao: pedir a inscricao no PICO de interesse (apos a maior descoberta), nao so no fim; fixar comentario com pergunta.",
    "evidencia": {
     "trafego": {
-     "YT_SUGGESTED": {
+     "RELATED_VIDEO": {
       "views": 11.0,
-      "minutes": 0.0
+      "minutes": 28.0
      },
-     "YT_CHANNEL": {
-      "views": 6.0,
-      "minutes": 0.0
+     "SUBSCRIBER": {
+      "views": 10.0,
+      "minutes": 6.0
      },
-     "YT_SEARCH": {
+     "NO_LINK_OTHER": {
       "views": 1.0,
       "minutes": 0.0
      }
@@ -186,7 +276,7 @@
  "estrategia_proximo_video": {
   "tema": "decisao do usuario com base nos 'temas' acima; evitar repetir tema/titulo de video publicado ha <= 7 dias",
   "duracao": "faixa conforme a pergunta 7 (experimento se insuficiente)",
-  "introducao": "primeiro evento visual real <= 5 s; promessa <= 15 s; sem contexto antes da 1a pergunta",
+  "introducao": "primeiro evento visual real <= 5 s; promessa <= 15 s; sem contexto antes da 1a pergunta | DADO REAL: 'We Traveled to the Edge of the Universe ' perdeu 70 p.p. da audiencia ate 21 s (cena hook, frase \"Tell me in the comments: what's the farthest thing you can s...\", ultimo evento visual ha 14.8 s), com so ~10 views (ruido alto, mas e a unica evidencia): nao pedir comentario/CTA nem fazer pergunta ao publico nos primeiros 30 s; abrir com imagem real e a promessa",
   "titulo": "especifico e concreto (numero/pergunta/objeto), sem promessa falsa; 1 variavel por teste",
   "thumbnail": "teste A/B de 2-3 variantes, 1 variavel por vez; texto <= 3 palavras; completar o titulo (nao repetir)",
   "medicao": "registrar no banco (channel.py register) e medir em 24 h (dias 0-1), 7 dias e 28 dias; comparar com o video anterior por retencao 30 s, avg_view_pct, CTR (com IC) e inscritos/1000 views"

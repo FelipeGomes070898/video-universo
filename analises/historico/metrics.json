@@ -1,14 +1,534 @@
 [
  {
-  "video_id": "manual:V1",
-  "ts": 1763424000,
-  "win": "lifetime",
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430717,
+  "win": "public",
   "metric": "views",
-  "value": 12.0,
-  "source": "manual_studio_prints"
+  "value": 15.0,
+  "source": "api"
  },
  {
-  "video_id": "manual:V1",
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430717,
+  "win": "public",
+  "metric": "likes",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430717,
+  "win": "public",
+  "metric": "comments",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430719,
+  "win": "public",
+  "metric": "views",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430719,
+  "win": "public",
+  "metric": "likes",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430719,
+  "win": "public",
+  "metric": "comments",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430720,
+  "win": "public",
+  "metric": "views",
+  "value": 10.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430720,
+  "win": "public",
+  "metric": "likes",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430720,
+  "win": "public",
+  "metric": "comments",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430852,
+  "win": "public",
+  "metric": "views",
+  "value": 15.0,
+  "source": "api"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430852,
+  "win": "public",
+  "metric": "likes",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430852,
+  "win": "public",
+  "metric": "comments",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430853,
+  "win": "lifetime",
+  "metric": "views",
+  "value": 15.0,
+  "source": "api"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430853,
+  "win": "lifetime",
+  "metric": "estimatedMinutesWatched",
+  "value": 33.0,
+  "source": "api"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430853,
+  "win": "lifetime",
+  "metric": "averageViewDuration",
+  "value": 288.0,
+  "source": "api"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430853,
+  "win": "lifetime",
+  "metric": "averageViewPercentage",
+  "value": 28.16,
+  "source": "api"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430853,
+  "win": "lifetime",
+  "metric": "subscribersGained",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430853,
+  "win": "lifetime",
+  "metric": "subscribersLost",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430853,
+  "win": "lifetime",
+  "metric": "likes",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430853,
+  "win": "lifetime",
+  "metric": "comments",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430853,
+  "win": "lifetime",
+  "metric": "shares",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430853,
+  "win": "d1",
+  "metric": "views",
+  "value": 17.0,
+  "source": "api"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430853,
+  "win": "d1",
+  "metric": "estimatedMinutesWatched",
+  "value": 43.0,
+  "source": "api"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430853,
+  "win": "d1",
+  "metric": "subscribersGained",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430853,
+  "win": "lifetime",
+  "metric": "views_after_day28_share",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "kAFBQHig-1o",
+  "ts": 1795430853,
+  "win": "lifetime",
+  "metric": "days_with_data",
+  "value": 3.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430855,
+  "win": "public",
+  "metric": "views",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430855,
+  "win": "public",
+  "metric": "likes",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430855,
+  "win": "public",
+  "metric": "comments",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430855,
+  "win": "lifetime",
+  "metric": "views",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430855,
+  "win": "lifetime",
+  "metric": "estimatedMinutesWatched",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430855,
+  "win": "lifetime",
+  "metric": "averageViewDuration",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430855,
+  "win": "lifetime",
+  "metric": "averageViewPercentage",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430855,
+  "win": "lifetime",
+  "metric": "subscribersGained",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430855,
+  "win": "lifetime",
+  "metric": "subscribersLost",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430855,
+  "win": "lifetime",
+  "metric": "likes",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430855,
+  "win": "lifetime",
+  "metric": "comments",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430855,
+  "win": "lifetime",
+  "metric": "shares",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430856,
+  "win": "d1",
+  "metric": "views",
+  "value": 1.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430856,
+  "win": "d1",
+  "metric": "estimatedMinutesWatched",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430856,
+  "win": "d1",
+  "metric": "subscribersGained",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430856,
+  "win": "d7",
+  "metric": "views",
+  "value": 1.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430856,
+  "win": "d7",
+  "metric": "estimatedMinutesWatched",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430856,
+  "win": "d7",
+  "metric": "subscribersGained",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430856,
+  "win": "lifetime",
+  "metric": "views_after_day28_share",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "fchanr_H4VU",
+  "ts": 1795430856,
+  "win": "lifetime",
+  "metric": "days_with_data",
+  "value": 4.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430857,
+  "win": "public",
+  "metric": "views",
+  "value": 10.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430857,
+  "win": "public",
+  "metric": "likes",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430857,
+  "win": "public",
+  "metric": "comments",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "win": "lifetime",
+  "metric": "views",
+  "value": 10.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "win": "lifetime",
+  "metric": "estimatedMinutesWatched",
+  "value": 24.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "win": "lifetime",
+  "metric": "averageViewDuration",
+  "value": 144.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "win": "lifetime",
+  "metric": "averageViewPercentage",
+  "value": 20.76,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "win": "lifetime",
+  "metric": "subscribersGained",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "win": "lifetime",
+  "metric": "subscribersLost",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "win": "lifetime",
+  "metric": "likes",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "win": "lifetime",
+  "metric": "comments",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "win": "lifetime",
+  "metric": "shares",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "win": "d1",
+  "metric": "views",
+  "value": 10.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "win": "d1",
+  "metric": "estimatedMinutesWatched",
+  "value": 24.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "win": "d1",
+  "metric": "subscribersGained",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "win": "d7",
+  "metric": "views",
+  "value": 12.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "win": "d7",
+  "metric": "estimatedMinutesWatched",
+  "value": 24.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "win": "d7",
+  "metric": "subscribersGained",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "win": "lifetime",
+  "metric": "views_after_day28_share",
+  "value": 0.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
+  "ts": 1795430858,
+  "win": "lifetime",
+  "metric": "days_with_data",
+  "value": 5.0,
+  "source": "api"
+ },
+ {
+  "video_id": "-DuVk_uUt8U",
   "ts": 1763424000,
   "win": "lifetime",
   "metric": "impressions",
@@ -16,7 +536,7 @@
   "source": "manual_studio_prints"
  },
  {
-  "video_id": "manual:V1",
+  "video_id": "-DuVk_uUt8U",
   "ts": 1763424000,
   "win": "lifetime",
   "metric": "ctr",
@@ -24,63 +544,7 @@
   "source": "manual_studio_prints"
  },
  {
-  "video_id": "manual:V1",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "averageViewDuration",
-  "value": 132.0,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "manual:V1",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "averageViewPercentage",
-  "value": 18.5,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "manual:V1",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "estimatedMinutesWatched",
-  "value": 24.0,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "manual:V1",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "subscribersGained",
-  "value": 0.0,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "manual:V1",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "likes",
-  "value": 0.0,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "manual:V1",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "comments",
-  "value": 0.0,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "manual:V2",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "views",
-  "value": 1.0,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "manual:V2",
+  "video_id": "fchanr_H4VU",
   "ts": 1763424000,
   "win": "lifetime",
   "metric": "impressions",
@@ -88,59 +552,11 @@
   "source": "manual_studio_prints"
  },
  {
-  "video_id": "manual:V2",
+  "video_id": "fchanr_H4VU",
   "ts": 1763424000,
   "win": "lifetime",
   "metric": "ctr",
   "value": 0.0,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "manual:V2",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "averageViewDuration",
-  "value": 3.0,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "manual:V2",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "estimatedMinutesWatched",
-  "value": 0.0,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "manual:V2",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "subscribersGained",
-  "value": 0.0,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "manual:V2",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "likes",
-  "value": 0.0,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "manual:V2",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "comments",
-  "value": 0.0,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "kAFBQHig-1o",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "views",
-  "value": 8.0,
   "source": "manual_studio_prints"
  },
  {
@@ -157,54 +573,6 @@
   "win": "lifetime",
   "metric": "ctr",
   "value": 0.014,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "kAFBQHig-1o",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "averageViewDuration",
-  "value": 282.0,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "kAFBQHig-1o",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "averageViewPercentage",
-  "value": 27.0,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "kAFBQHig-1o",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "estimatedMinutesWatched",
-  "value": 36.0,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "kAFBQHig-1o",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "subscribersGained",
-  "value": 0.0,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "kAFBQHig-1o",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "likes",
-  "value": 0.0,
-  "source": "manual_studio_prints"
- },
- {
-  "video_id": "kAFBQHig-1o",
-  "ts": 1763424000,
-  "win": "lifetime",
-  "metric": "comments",
-  "value": 0.0,
   "source": "manual_studio_prints"
  }
 ]
