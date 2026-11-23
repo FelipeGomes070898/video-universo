@@ -49,7 +49,7 @@
  },
  {
   "slug": "cassini_final_dive",
-  "video_id": null,
+  "video_id": "BGtOdwBvK1g",
   "theme": "missao Cassini / Saturno / Encelado",
   "script_path": "cassini_final_dive",
   "title": "Why NASA Flew Its Own Spacecraft Into Saturn",
@@ -61,6 +61,6 @@
   "problems": "simulacoes 3D simples; poucos videos reais de alta resolucao no acervo (so 2 usados, animacao); cena launch 61 s sem corte (mas com troca de foto a cada ~10 s)",
   "recommendations": "se a retencao 30 s melhorar vs V1 (36,8%), manter gancho com midia real; comparar CTR A x B com >= 1000 impressoes",
   "created_ts": 1795439470,
-  "updated_ts": 1795439470
+  "updated_ts": 1795447828
  }
 ]

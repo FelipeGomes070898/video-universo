@@ -19,8 +19,8 @@ NÃO TESTADO: OAuth local (`connect/refresh/disconnect`), download da miniatura 
 
 NOTA: a partir desta sessão o código novo (`pipeline/channel/`, `channel.py`, porta de estratégia no `produce.py`) existe SÓ no video-universo; o `pipeline/` aqui passa a ser a fonte da verdade (o ARCHIVE-STUDIO-AI não tem essas mudanças).
 
-## Produção Cassini (2026-11-23) — pronta, NÃO publicada
-- Vídeo `cassini_final_dive` (Why NASA Flew Its Own Spacecraft Into Saturn), 10:10, entregue em `entregas/cassini_final_dive/` do ARCHIVE-STUDIO-AI (branch `ccr-1871013c-o689be`, partes de 95 MB + SHA256 conferido) e textos em `entregas/cassini_final_dive/` aqui (roteiro, publicacao, credits, captions). Dossiê (18 fatos com fonte) em `projects/cassini_final_dive/dossier.json` no ARCHIVE-STUDIO-AI. QC: sem FAIL; restam WARN "cena sem corte 61 s (launch)" e MANUAL "voz humana (ouvir)". Registrado em `productions` (sem video_id até publicar).
+## Produção Cassini (2026-11-23) — enviada ao YouTube como PRIVADA (id BGtOdwBvK1g; Studio: https://studio.youtube.com/video/BGtOdwBvK1g/edit), thumbnail B definida; falta o usuário publicar
+- Vídeo `cassini_final_dive` (Why NASA Flew Its Own Spacecraft Into Saturn), 10:10, entregue em `entregas/cassini_final_dive/` do ARCHIVE-STUDIO-AI (branch `ccr-1871013c-o689be`, partes de 95 MB + SHA256 conferido) e textos em `entregas/cassini_final_dive/` aqui (roteiro, publicacao, credits, captions). Dossiê (18 fatos com fonte) em `projects/cassini_final_dive/dossier.json` no ARCHIVE-STUDIO-AI. QC: sem FAIL; restam WARN "cena sem corte 61 s (launch)" e MANUAL "voz humana (ouvir)". Registrado em `productions` (video_id BGtOdwBvK1g). Canal: o do token usado (conferir no Studio); thumbnail B enviada pela API (A/B só no Studio).
 - Gerado com base em `analises/estrategia_2026-11-23.md` (gancho com mídia real, sem CTA em 30 s, CTA único no pico).
 
 ## PENDENTE
