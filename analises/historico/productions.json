@@ -78,5 +78,21 @@
   "recommendations": "comparar retencao aos 30 s com os 3 videos anteriores; se CTR A x B tiver >=1000 impressoes comparar com IC",
   "created_ts": 1795458768,
   "updated_ts": 1795458768
+ },
+ {
+  "slug": "voyager_edge",
+  "video_id": "9ZgBgBqo6G4",
+  "theme": null,
+  "script_path": null,
+  "title": null,
+  "thumbnail_path": null,
+  "duration_s": null,
+  "strategy": null,
+  "published_at": null,
+  "positives": null,
+  "problems": null,
+  "recommendations": null,
+  "created_ts": 1795530364,
+  "updated_ts": 1795530364
  }
 ]
