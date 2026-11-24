@@ -94,5 +94,21 @@
   "recommendations": null,
   "created_ts": 1795530364,
   "updated_ts": 1795530364
+ },
+ {
+  "slug": "voyager_delay",
+  "video_id": "IwqWFop4f8k",
+  "theme": null,
+  "script_path": null,
+  "title": null,
+  "thumbnail_path": null,
+  "duration_s": null,
+  "strategy": null,
+  "published_at": null,
+  "positives": null,
+  "problems": null,
+  "recommendations": null,
+  "created_ts": 1795542698,
+  "updated_ts": 1795542698
  }
 ]
