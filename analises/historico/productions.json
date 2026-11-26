@@ -174,5 +174,21 @@
   "recommendations": null,
   "created_ts": 1795629606,
   "updated_ts": 1795629606
+ },
+ {
+  "slug": "sun_fuel",
+  "video_id": "sFdGbUG3ZAc",
+  "theme": null,
+  "script_path": null,
+  "title": null,
+  "thumbnail_path": null,
+  "duration_s": null,
+  "strategy": null,
+  "published_at": null,
+  "positives": null,
+  "problems": null,
+  "recommendations": null,
+  "created_ts": 1795699782,
+  "updated_ts": 1795699782
  }
 ]
