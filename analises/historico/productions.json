@@ -206,5 +206,21 @@
   "recommendations": null,
   "created_ts": 1795712916,
   "updated_ts": 1795712916
+ },
+ {
+  "slug": "moon_vanish",
+  "video_id": "IWeIbk-9aR8",
+  "theme": null,
+  "script_path": null,
+  "title": null,
+  "thumbnail_path": null,
+  "duration_s": null,
+  "strategy": null,
+  "published_at": null,
+  "positives": null,
+  "problems": null,
+  "recommendations": null,
+  "created_ts": 1795736019,
+  "updated_ts": 1795736019
  }
 ]
