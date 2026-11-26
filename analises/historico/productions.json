@@ -190,5 +190,21 @@
   "recommendations": null,
   "created_ts": 1795699782,
   "updated_ts": 1795699782
+ },
+ {
+  "slug": "venus_survive",
+  "video_id": "_q39fyAB5lo",
+  "theme": null,
+  "script_path": null,
+  "title": null,
+  "thumbnail_path": null,
+  "duration_s": null,
+  "strategy": null,
+  "published_at": null,
+  "positives": null,
+  "problems": null,
+  "recommendations": null,
+  "created_ts": 1795712916,
+  "updated_ts": 1795712916
  }
 ]
